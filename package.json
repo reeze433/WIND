@@ -1,0 +1,17 @@
+{
+  "name": "wind-foundry",
+  "version": "0.3.0",
+  "private": true,
+  "description": "WIND system for Foundry VTT",
+  "scripts": {
+    "test": "node run-tests.cjs",
+    "verify": "node verify_release.cjs"
+  },
+  "devDependencies": {
+    "handlebars": "4.7.10",
+    "htmlparser2": "10.1.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

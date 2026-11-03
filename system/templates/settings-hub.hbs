@@ -1,0 +1,46 @@
+{{#*inline "setting-select"}}<div class="form-group"><label for="wind-setting-{{name}}">{{localize label}}</label><select id="wind-setting-{{name}}" name="{{name}}">{{#each options}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></div>{{/inline}}
+<div class="wind-settings-shell">
+<nav class="wind-settings-nav" role="tablist" aria-label="{{localize 'VIT.WindSettings'}}">{{#each tabs}}<button type="button" role="tab" data-action="settingsTab" data-settings-tab="{{id}}" id="wind-settings-tab-{{id}}" aria-controls="wind-settings-{{id}}" aria-selected="{{active}}">{{label}}</button>{{/each}}</nav>
+<div class="wind-settings-content">
+<section data-settings-section="rules" role="tabpanel" id="wind-settings-rules" aria-labelledby="wind-settings-tab-rules">
+<h2>{{localize 'VIT.Settings_rules'}}</h2>
+{{> setting-select name="responseRollVisibility" label="VIT.ResponseVisibility" options=responseOptions}}<p class="hint">{{localize 'VIT.ResponseVisibilityHint'}}</p>
+<div class="form-group"><label for="wind-health">{{localize 'VIT.HealthMultiplier'}}</label><input id="wind-health" type="number" name="healthPerWellbeing" min="0" step="1" value="{{healthPerWellbeing}}"></div><p class="hint">{{localize 'VIT.HealthMultiplierHint'}}</p>
+{{> setting-select name="initiativeAttribute" label="VIT.InitiativeAttribute" options=initiativeOptions}}<p class="hint">{{localize 'VIT.InitiativeHint'}}</p>
+<label class="wind-setting-check"><input type="checkbox" name="criticalOnDoubleSuccess" {{checked criticalOnDoubleSuccess}}>{{localize 'VIT.CriticalOnDoubleSuccess'}}</label><p class="hint">{{localize 'VIT.CriticalHint'}}</p>
+</section>
+<section data-settings-section="movement" role="tabpanel" id="wind-settings-movement" aria-labelledby="wind-settings-tab-movement" hidden>
+<h2>{{localize 'VIT.Settings_movement'}}</h2>
+{{> setting-select name="movementUnits" label="VIT.MovementUnits" options=movementOptions}}<p class="hint">{{localize 'VIT.MovementUnitsHint'}}</p>
+<button type="button" data-action="movementSettings"><i class="fa-solid fa-person-running" aria-hidden="true"></i> {{localize 'VIT.MovementTableButton'}}</button>
+</section>
+<section data-settings-section="cards" role="tabpanel" id="wind-settings-cards" aria-labelledby="wind-settings-tab-cards" hidden>
+<h2>{{localize 'VIT.Settings_cards'}}</h2>
+<div class="form-group"><label for="wind-custom-panel">{{localize 'VIT.CustomPanelName'}}</label><input id="wind-custom-panel" type="text" name="customPanelName" maxlength="80" value="{{customPanelName}}"></div>
+</section>
+<section data-settings-section="appearance" role="tabpanel" id="wind-settings-appearance" aria-labelledby="wind-settings-tab-appearance" hidden>
+<h2>{{localize 'VIT.Settings_appearance'}}</h2>
+{{> setting-select name="theme" label="VIT.Theme" options=themeOptions}}
+{{> setting-select name="fontPreset" label="VIT.FontPreset" options=fontOptions}}<p class="hint">{{localize 'VIT.FontPresetHint'}}</p>
+<h3>{{localize 'VIT.HeaderBackgrounds'}}</h3>
+<label>Star Wars<file-picker name="headerStarWars" type="image" value="{{headerStarWars}}"></file-picker></label>
+<label>CODE RED<file-picker name="headerCodeRed" type="image" value="{{headerCodeRed}}"></file-picker></label>
+<label>{{localize 'VIT.ThemeJujutsu'}}<file-picker name="headerJujutsu" type="image" value="{{headerJujutsu}}"></file-picker></label><p class="hint">{{localize 'VIT.HeaderBackgroundsHint'}}</p>
+</section>
+<section data-settings-section="resources" role="tabpanel" id="wind-settings-resources" aria-labelledby="wind-settings-tab-resources" hidden>
+<h2>{{localize 'VIT.Settings_resources'}}</h2>
+<h3>{{localize 'VIT.InspirationMessages'}}</h3>
+<p class="hint">{{localize 'VIT.InspirationTemplateHint'}}</p>
+{{#each inspirationMessages}}<div class="form-group"><label for="wind-inspiration-{{key}}">{{label}}</label><textarea id="wind-inspiration-{{key}}" name="inspirationMessages.{{key}}" rows="2" maxlength="600" required>{{value}}</textarea></div>{{/each}}
+<label for="wind-currency-names">{{localize 'VIT.CurrencyNames'}}</label><textarea id="wind-currency-names" name="currencies" rows="4">{{currencies}}</textarea><p class="hint">{{localize 'VIT.CurrenciesHint'}}</p>
+<h3>{{localize 'VIT.CustomResources'}}</h3><p class="hint">{{localize 'VIT.CurrencyResourceHint'}}</p><button type="button" data-action="resourceSettings"><i class="fa-solid fa-sliders" aria-hidden="true"></i> {{localize 'VIT.CustomResourcesConfigure'}}</button>
+</section>
+<section data-settings-section="dice" role="tabpanel" id="wind-settings-dice" aria-labelledby="wind-settings-tab-dice" hidden>
+<h2>{{localize 'VIT.Settings_dice'}}</h2>
+<button type="button" data-action="playerDiceSettings"><i class="fa-solid fa-dice-d6" aria-hidden="true"></i> {{localize 'VIT.PlayerDice'}}</button>
+<h3>{{localize 'VIT.DiceFaces'}}</h3><select name="diceStyle" aria-label="{{localize 'VIT.DiceFaces'}}"><option value="red" {{#if (eq diceStyle 'red')}}selected{{/if}}>CODE RED</option><option value="numeric" {{#if (eq diceStyle 'numeric')}}selected{{/if}}>{{localize 'VIT.NumericDice'}}</option></select>
+{{#each faces}}<div class="form-group"><label>d6: {{n}}</label><file-picker name="face{{n}}" type="image" value="{{path}}"></file-picker></div>{{/each}}<p class="hint">{{localize 'VIT.DiceFacesHint'}}</p>
+<h3>{{localize 'VIT.CoinSettings'}}</h3><label>{{localize 'VIT.CoinAtlas'}}<file-picker name="coinAtlas" type="any" value="{{coinAtlas}}"></file-picker></label><p class="hint">{{localize 'VIT.CoinAtlasHint'}}</p><div class="vit-atlas-preview">{{{preview}}}</div>
+</section>
+</div><footer class="wind-settings-footer"><span class="hint">{{localize 'VIT.SettingsAllTabsHint'}}</span><button type="submit"><i class="fa-solid fa-save" aria-hidden="true"></i> {{localize 'VIT.SaveSettings'}}</button></footer>
+</div>

@@ -1,0 +1,84 @@
+{
+  "id": "vitruviy",
+  "title": "WIND",
+  "description": "Wind — самостоятельная игровая система для Foundry VTT.",
+  "version": "0.3.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.368",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Мастерская Wind"
+    }
+  ],
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/vitruviy.css"
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "npc": {}
+    },
+    "Item": {
+      "card": {
+        "htmlFields": [
+          "description",
+          "privateDescription"
+        ]
+      },
+      "trait": {
+        "htmlFields": [
+          "description",
+          "privateDescription"
+        ]
+      },
+      "ability": {
+        "htmlFields": [
+          "description",
+          "privateDescription"
+        ]
+      },
+      "equipment": {
+        "htmlFields": [
+          "description",
+          "privateDescription"
+        ]
+      },
+      "condition": {
+        "htmlFields": [
+          "description",
+          "privateDescription"
+        ]
+      },
+      "other": {
+        "htmlFields": [
+          "description",
+          "privateDescription"
+        ]
+      }
+    }
+  },
+  "socket": false,
+  "grid": {
+    "distance": 1,
+    "units": "зона"
+  },
+  "license": "LICENSE.txt",
+  "primaryTokenAttribute": "health",
+  "url": "https://github.com/reeze433/WIND",
+  "manifest": "https://github.com/reeze433/WIND/releases/latest/download/system.json",
+  "download": "https://github.com/reeze433/WIND/releases/download/v0.3.0/vitruviy-0.3.0.zip",
+  "bugs": "https://github.com/reeze433/WIND/issues"
+}

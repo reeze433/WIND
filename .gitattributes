@@ -1,0 +1,6 @@
+* text=auto
+*.mjs text eol=lf
+*.js text eol=lf
+*.hbs text eol=lf
+*.json text eol=lf
+*.py text eol=lf

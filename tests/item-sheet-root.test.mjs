@@ -1,0 +1,24 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url);
+const Handlebars=require('handlebars');
+const {parseDocument}=require('htmlparser2');
+const h=Handlebars.create();
+h.registerHelper('localize',key=>key);
+h.registerHelper('checked',value=>value?'checked':'');
+h.registerHelper('selectOptions',()=> '');
+const render=h.compile(readFileSync(new URL('../system/templates/item.hbs',import.meta.url),'utf8'));
+for(const [name,canEditItem,itemEditing] of [['owner view',true,false],['owner editor',true,true],['observer view',false,false]])test(`item template renders one Foundry root: ${name}`,()=>{
+ const html=render({canEditItem,itemEditing,editable:canEditItem,item:{name:'Test',uuid:'Item.test'},system:{hasTier:true,tier:'A',price:42},categories:{equipment:'Equipment'},category:'equipment',descriptionHTML:'<p><a href="https://example.com">Link</a></p>',actionModeViews:[],itemDescriptionTab:true});
+ const roots=parseDocument(html).children.filter(n=>n.type==='tag');
+ assert.equal(roots.length,1,'Foundry rejects multiple part roots');
+ assert.equal(roots[0].attribs.class,'vit-item-sheet-content');
+ assert.equal(html.includes('<prose-mirror'),itemEditing);
+ assert.equal(html.includes('vit-item-edit-bar'),false);
+ assert.match(html,/data-item-group="public-description" open/);
+ assert.equal(html.includes('data-item-group="private-description" open'),canEditItem);
+ if(!itemEditing)assert.match(html,/VIT.Price: 42/);
+ if(!itemEditing)assert.match(html,/<a href="https:\/\/example.com">Link<\/a>/);
+});

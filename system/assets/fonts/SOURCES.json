@@ -1,0 +1,32 @@
+[
+  {
+    "file": "exo2/Exo2.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/exo2/Exo2%5Bwght%5D.ttf",
+    "sha256": "205a448676a2586f9c57c25f3d5c58ca8db7e6cf5edf7506783a010c6fe2bfb5",
+    "bytes": 303940
+  },
+  {
+    "file": "exo2/Exo2-Italic.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/exo2/Exo2-Italic%5Bwght%5D.ttf",
+    "sha256": "bad568cea9ed23d6ae4aea41ad3f7747752952aabdd85d7f01474af392a21b32",
+    "bytes": 302556
+  },
+  {
+    "file": "exo2/OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/exo2/OFL.txt",
+    "sha256": "7f95a8eeecc6904ffc81cd10cc8ebc7fcee72a67922924bf45f02dff03b88127",
+    "bytes": 4386
+  },
+  {
+    "file": "russo-one/RussoOne-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/russoone/RussoOne-Regular.ttf",
+    "sha256": "bc0abcc660bd8b7ad3000ecb2898a27c58a29a50f7ec81652fa12e75148d09df",
+    "bytes": 39124
+  },
+  {
+    "file": "russo-one/OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/russoone/OFL.txt",
+    "sha256": "3ac1301549523d9861fedca12871f24e575fbd26d520632fc00ba849b471d275",
+    "bytes": 4390
+  }
+]

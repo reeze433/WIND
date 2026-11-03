@@ -1,0 +1,3 @@
+<div class="vit-resource-settings"><p class="vit-hint">{{localize 'VIT.CustomResourcesHint'}}</p><label>{{localize 'VIT.CustomResourceCount'}}<input type="number" name="count" min="0" max="{{limit}}" step="1" value="{{count}}" required></label>
+{{#each resources}}<label data-resource-index="{{index}}" {{#unless visible}}hidden{{/unless}}>{{localize 'VIT.CustomResource'}} {{number}}<input name="resourceName{{index}}" value="{{value}}" maxlength="40"></label>{{/each}}
+<button type="submit">{{localize 'VIT.SaveSettings'}}</button></div>

@@ -1,0 +1,21 @@
+<div class="vit-coin-settings">
+  <section class="vit-customization-scroll">
+  <h2>{{localize 'VIT.HeaderBackgrounds'}}</h2>
+  <label>Star Wars<file-picker name="headerStarWars" type="image" value="{{headerStarWars}}"></file-picker></label>
+  <label>CODE RED<file-picker name="headerCodeRed" type="image" value="{{headerCodeRed}}"></file-picker></label>
+<label>{{localize 'VIT.ThemeJujutsu'}}<file-picker name="headerJujutsu" type="image" value="{{headerJujutsu}}"></file-picker></label>
+  <p class="hint">{{localize 'VIT.HeaderBackgroundsHint'}}</p>
+  <h2>{{localize 'VIT.CoinSettings'}}</h2>
+  <label>{{localize 'VIT.CoinAtlas'}}<file-picker name="coinAtlas" type="any" value="{{coinAtlas}}"></file-picker></label>
+  <p class="hint">{{localize 'VIT.CoinAtlasHint'}}</p>
+  <div class="vit-atlas-preview">{{{preview}}}</div>
+  <h2>{{localize 'VIT.DiceFaces'}}</h2>
+  <select name="diceStyle"><option value="red" {{#if (eq diceStyle 'red')}}selected{{/if}}>CODE: RED</option><option value="numeric" {{#if (eq diceStyle 'numeric')}}selected{{/if}}>{{localize 'VIT.NumericDice'}}</option></select>
+  {{#each faces}}<div class="form-group"><label>d6: {{n}}</label><file-picker name="face{{n}}" type="image" value="{{path}}"></file-picker></div>{{/each}}
+  <p class="hint">{{localize 'VIT.DiceFacesHint'}}</p>
+  <h2>{{localize 'VIT.Currencies'}}</h2>
+  <label>{{localize 'VIT.CurrencyNames'}}<textarea name="currencies" rows="4">{{currencies}}</textarea></label>
+  <p class="hint">{{localize 'VIT.CurrenciesHint'}}</p>
+  </section>
+  <footer class="vit-customization-footer"><button type="submit"><i class="fa-solid fa-save"></i> {{localize 'VIT.SaveSettings'}}</button></footer>
+</div>

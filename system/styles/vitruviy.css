@@ -1,0 +1,670 @@
+.vitruviy{--vit-bg:#202120;--vit-panel:#272826;--vit-text:#e6e1cf;--vit-muted:#a4a194;--vit-gold:#c6ad68;--vit-line:#41423b;color:var(--vit-text);background:var(--vit-bg);font-family:Arial,sans-serif}
+.vitruviy .window-content{padding:0;background:var(--vit-bg);overflow:auto}.vitruviy input,.vitruviy textarea,.vitruviy select{color:var(--vit-text);background:#1b1c1a;border:1px solid var(--vit-line);border-radius:4px}.vitruviy button{color:var(--vit-text);background:#2d2e2a;border:1px solid var(--vit-line);box-shadow:none;cursor:pointer}.vitruviy button:hover{border-color:var(--vit-gold);color:var(--vit-gold)}.vitruviy :focus-visible{outline:2px solid var(--vit-gold);outline-offset:2px}.vitruviy input:disabled,.vitruviy textarea:disabled{opacity:.9}.vit-shell{min-width:620px}.vit-hero{display:flex;gap:16px;align-items:center;padding:24px;border-bottom:1px solid var(--vit-line)}.vit-portrait{position:relative;flex:0 0 110px}.vit-portrait>img{width:110px;height:110px;border:2px solid var(--vit-line);border-radius:8px;object-fit:cover;cursor:pointer}.vit-portrait button{position:absolute;bottom:5px;right:5px;width:28px;height:28px;padding:0}.vit-identity{flex:1;min-width:140px}.vit-identity .vit-name{font:700 27px Georgia,serif;letter-spacing:1px;color:var(--vit-text);width:100%;border:0;background:transparent}.vit-identity .vit-archetype{font-style:italic;width:100%;border:0;background:transparent;color:var(--vit-muted);margin:5px 0 10px}.vit-health-track{height:8px;background:#40332e;border-radius:9px;overflow:hidden}.vit-health-track span{display:block;height:100%;background:#bd5152}.vit-resource-line{display:flex;gap:6px;align-items:center;margin-top:8px;font-size:13px}.vit-resource-line>i{color:#c65b59}.vit-resource-line input{width:42px;text-align:center}.vit-resource-line button,.vit-metric button{width:26px;height:26px;padding:0}.vit-metric{display:flex;flex-direction:column;gap:9px;align-items:center;border:1px solid var(--vit-line);border-radius:8px;padding:12px 8px;background:#292a27;align-self:flex-start;min-width:78px}.vit-metric input{width:58px;font-weight:bold;font-size:28px;text-align:center;border:0;background:transparent}.vit-metric small{font-size:10px;text-transform:uppercase;color:var(--vit-muted);letter-spacing:.5px}.vit-metric.inspiration{color:var(--vit-gold)}.vit-metric.inspiration input{color:var(--vit-gold)}.vit-metric.experience{border-color:#7e914b}.vit-metric.experience input{color:#a7bd66}.vit-body{display:grid;grid-template-columns:100px 1fr}.vit-attributes{border-right:1px solid var(--vit-line);padding-top:14px}.vit-attribute{text-align:center;padding:8px 4px}.vit-attribute>button{display:flex;flex-direction:column;align-items:center;gap:6px;background:transparent;border:0;width:100%;padding:5px 0}.vit-attribute i{font-size:20px;color:#aaa48b}.vit-attribute strong{font-size:28px}.vit-attribute small{font-size:9px;text-transform:uppercase;color:var(--vit-muted)}.vit-attribute>input{width:45px;height:20px;text-align:center;font-size:11px;margin:4px auto;color:var(--vit-muted)}.vit-sections{padding:16px;display:flex;flex-direction:column;gap:14px}.vit-panel{border:1px solid var(--vit-line);border-radius:8px;overflow:hidden;background:var(--vit-panel)}.vit-panel h2{font:700 16px Georgia,serif;letter-spacing:1.5px;text-transform:uppercase;margin:0;padding:10px 14px;background:#30312d;border-bottom:1px solid var(--vit-line);display:flex;align-items:center;justify-content:space-between}.vit-panel h2 button{width:25px;height:24px;padding:0}.vit-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:10px;padding:12px}.vit-card{background:#191b19;border:1px solid #40423a;border-left:3px solid #9f9779;border-radius:6px;padding:12px;min-height:120px;display:flex;flex-direction:column}.vit-card.equipment{border-left-color:#56889f}.vit-card header{display:flex;align-items:center;gap:8px}.vit-card header img{width:28px;height:28px;object-fit:cover;border:0}.vit-card header button{font:700 14px Georgia,serif;text-transform:uppercase;background:transparent;border:0;text-align:left;padding:0;flex:1;height:auto}.vit-dots{white-space:nowrap;letter-spacing:1px;font-size:13px}.vit-description{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;line-height:1.55;color:#bab6a8}.vit-card footer{display:flex;justify-content:flex-end;gap:5px;margin-top:auto;padding-top:8px}.vit-card footer button{width:25px;height:24px;padding:0}.vit-card small{color:var(--vit-muted)}.vit-card .vit-damage{color:#d5756d}.vit-card .vit-cost{color:#d5756d;background:#372523;padding:4px;margin-top:4px}.vit-empty{margin:0;padding:10px;color:var(--vit-muted);font-size:13px}.vit-bio textarea{width:100%;min-height:75px;resize:vertical;border:0;padding:14px;background:transparent}.vit-item-body{padding:18px;display:flex;flex-direction:column;gap:14px}.vit-item-body header{display:flex;gap:12px;align-items:center}.vit-item-body header img{width:72px;height:72px;cursor:pointer;object-fit:cover}.vit-item-body header input{font:700 20px Georgia,serif;width:100%}.vit-item-body label{display:flex;flex-direction:column;gap:7px;color:var(--vit-muted)}.vit-item-body textarea{min-height:170px;resize:vertical}.vit-hint{font-size:12px;color:var(--vit-muted)}.vit-chat{padding:8px;background:#252723;color:#eee8d5;border:1px solid #777056;border-radius:7px}.vit-chat header{font:600 13px/1.3 var(--vit-heading,Arial,sans-serif);color:#d5bd7c}.vit-chat p{font-size:12px;line-height:1.4;margin:4px 0}.vit-attempt{display:flex;align-items:center;gap:5px;padding:4px;border:1px solid transparent;margin:4px 0;color:#a3a396}.vit-attempt.chosen{border-color:#b5a268;border-radius:4px;color:#f0ead4}.vit-attempt>div{flex:1;display:flex;gap:4px;flex-wrap:wrap}.vit-die{font-size:12px;min-width:23px;padding:3px;background:#35382f;border-radius:4px;text-align:center}.vit-chat footer{border-top:1px solid #555747;padding-top:6px}.vit-chat footer strong{font-size:18px;color:#d5bd7c}.vit-roll-form{display:flex;flex-direction:column;gap:10px}.vit-roll-form label{display:flex;align-items:center;justify-content:space-between;gap:12px}.vit-roll-form input,.vit-roll-form select{width:55%}.vit-roll-form p{font-size:12px;opacity:.8}
+.vit-attribute>button{height:auto;min-height:75px}.vit-identity .vit-name{height:42px}.vit-metric input{height:42px;line-height:42px}.vit-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.vit-card header button{flex:1;min-height:28px}.vit-hero{flex-shrink:0}.vitruviy .window-content{display:block}.vit-shell{height:auto}.vit-attribute>input{display:block;margin:4px auto 0}.vit-card header{flex-wrap:wrap}.vit-card header .vit-dots{margin-left:auto}
+.vit-attribute{padding:2px 4px}.vit-attribute>button{height:64px;min-height:64px;gap:3px;padding:0}.vit-attribute i{font-size:18px;line-height:20px}.vit-attribute strong{font-size:24px;line-height:26px}.vit-attribute small{font-size:9px;line-height:12px}.vit-attribute>input{height:18px;margin-top:3px}.vit-metric>div{display:flex;gap:4px}.vit-shell{height:100%;display:flex;flex-direction:column}.vit-body{flex:1;min-height:0}.vit-sections,.vit-attributes{overflow:auto}
+.vit-panel{flex-shrink:0}
+.vit-attribute{display:flex;flex-direction:column;align-items:center;gap:6px;padding:9px 4px}.vit-attribute>button{height:28px;min-height:28px;padding:0;width:36px}.vit-attribute i{font-size:22px;line-height:26px}.vit-attribute>input{width:60px;height:26px;margin:0;font-size:16px;line-height:24px;text-align:center}.vit-attribute>small{font-size:9px;line-height:12px;text-transform:uppercase;color:var(--vit-muted)}.vit-chat-dice{display:flex;align-items:center;gap:6px;width:100%;padding:2px 0}.vit-chat-dice input{width:52px;height:24px;text-align:center;flex:0 0 52px}.vit-chat-dice button{flex:1;font-size:12px;min-height:24px}
+#chat-controls:has(.vit-chat-dice){flex-wrap:wrap}.vit-chat-dice{flex:0 0 100%;min-width:0}.vit-chat-dice button{white-space:nowrap;line-height:20px;height:24px}
+.vit-chat-dice{gap:4px}.vit-chat-dice label{display:flex;align-items:center;gap:4px;font-size:11px;white-space:nowrap}.vit-chat-dice input{width:36px;flex:0 0 36px;padding:2px}.vit-chat-dice button.vit-success-roll{flex:0 0 30px;padding:0;font-size:16px}.vit-chat-dice button.vit-dice-toggle{flex:1;min-width:0;padding:0 3px;font-size:10px}.vit-chat-dice .vit-dice-toggle[aria-pressed="true"]{color:#f5df9c;background:#554c31;border-color:#c6ad68}
+/* Vitruviy: the carousel portrait footer contains initiative only.
+ * Foundry places module styles in a higher CSS layer; these overrides need !important. */
+body .combat-dock .combatant-wrapper .bottom-ui-container,
+body .combat-dock .combatant-wrapper .tracked-attribute-bar-max,
+body .combat-dock .combatant-wrapper .portrait-bar,
+body .combat-dock .combatant-wrapper .effects-container{display:none!important}
+body .combat-dock .combatant-portrait{margin-bottom:28px!important}
+body .combat-dock .combatant-wrapper .overlay-ui-container{overflow:visible!important}
+body .combat-dock .combatant-wrapper .portrait-initiative{top:100%!important;left:0!important;width:100%!important;height:24px!important;margin:2px 0 0!important;background:#202120!important;border:1px solid #41423b!important;border-radius:4px!important;opacity:1!important;font-size:16px!important;font-weight:bold!important;color:#e6e1cf!important}
+body .combat-dock .portrait-initiative>i{display:none!important}
+body .combat-dock #combatants{min-height:calc(var(--combatant-portrait-size)*var(--combatant-portrait-aspect)*1.2 + 28px);height:auto!important}
+/* Compact sheet layout, matching the user's reference. */
+.vit-hero{padding:22px 16px;gap:14px;align-items:flex-start;min-height:156px}
+.vit-identity{padding-top:9px}.vit-portrait{flex-basis:102px}.vit-portrait>img{width:102px;height:102px}
+.vit-metric{width:82px;min-width:82px;padding:8px 5px;min-height:84px;gap:4px}
+.vit-inspiration-box{width:92px;flex:0 0 92px;display:flex;flex-direction:column;align-items:center;gap:5px}
+.vit-inspiration-box .vit-metric{width:92px;min-width:92px;min-height:84px;padding:9px 5px}
+.vit-inspiration-circle{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border:4px solid #e3bc26;border-radius:50%;color:#f3e9c9;font-size:22px;font-weight:bold;line-height:1;background:#171917}
+.vit-metric.inspiration small{color:#e3bc26;font-size:9px;font-weight:bold}
+.vit-spend-inspiration{height:21px;min-height:21px;width:50px;padding:0;line-height:18px}
+.vit-sections{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-content:start;align-items:start;gap:10px;padding:10px}
+.vit-group-condition,.vit-group-equipment,.vit-bio{grid-column:1 / -1}
+.vit-group-condition{display:flex;align-items:center;min-height:50px;padding-right:8px}
+.vit-group-condition h2{flex:0 0 auto;align-self:stretch;border:0;padding:8px 12px;gap:10px;font-size:15px;letter-spacing:1px}
+.vit-group-condition .vit-cards{padding:5px;flex:1;min-height:40px}
+.vit-panel h2{padding:8px 12px;font-size:15px;letter-spacing:1px}.vit-group-controls{display:flex;gap:5px;align-items:center}
+.vit-group-controls button{width:24px;height:23px;font-size:12px}
+.vit-cards{grid-template-columns:repeat(auto-fit,minmax(210px,1fr));padding:10px;gap:8px}
+.vit-group-equipment{min-height:178px}.vit-group-ability .vit-cards,.vit-group-trait .vit-cards{grid-template-columns:1fr}
+.vit-card{padding:10px;min-height:110px}.vit-card header button{font-size:13px;overflow-wrap:anywhere}.vit-description{margin:8px 0}
+.vit-tier-badge{display:inline-flex;align-items:center;justify-content:center;flex:0 0 21px;width:21px;height:21px;border-radius:3px;font:bold 14px Arial,sans-serif;color:#10120e;background:#eee}
+.tier-S{background:#dd4747}.tier-A{background:#eda917}.tier-B{background:#e6d522}.tier-C{background:#65ae73}.tier-D{background:#628bcc}.tier-E{background:#b85be4}
+.vit-icons{display:flex;flex-wrap:wrap;align-items:center;gap:8px;min-height:64px}
+.vit-icon-card{position:relative;flex:0 0 44px;width:44px;min-height:44px}
+.vit-icon-main{position:relative;width:44px;height:44px;padding:0;display:block;border-radius:5px;overflow:visible}
+.vit-icon-main>img{display:block;width:100%;height:100%;object-fit:cover;border:0;border-radius:4px}
+.vit-icon-main .vit-tier-badge{position:absolute;right:-3px;bottom:-3px;width:17px;height:17px;font-size:11px;border:1px solid #171917}
+.vit-icon-roll{position:absolute;top:2px;right:2px;font-size:11px;text-shadow:0 0 3px #000;color:#f6e0a7}
+.vit-icon-tools{position:absolute;top:-9px;left:0;display:none;gap:2px;z-index:2}
+.vit-icon-card:hover .vit-icon-tools,.vit-icon-card:focus-within .vit-icon-tools{display:flex}
+.vit-icon-tools button{width:20px;height:20px;min-height:20px;padding:0;font-size:10px}
+.vit-bio textarea{min-height:105px}.vit-item-body{gap:10px}.vit-item-body .vit-check-label{flex-direction:row;align-items:center;gap:8px}.vit-item-body .vit-check-label input{width:16px;height:16px;margin:0}.vit-item-actions{display:flex;gap:8px}.vit-item-actions button{flex:1}.vit-item-damage{color:#e4c276}
+.vit-sections{grid-auto-rows:max-content;align-items:stretch}
+.vit-card header button{justify-content:flex-start;text-align:left}
+.vit-group-equipment.vit-collapsed{min-height:0}
+
+/* 0.1.5: attributes in a three-column header, compact inline resources. */
+.vit-hero{min-height:0;align-items:center;padding:14px 16px;gap:14px}
+.vit-identity{padding:0;min-width:0}.vit-name-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}.vit-name-row .vit-name{min-width:0;flex:1;width:0;font-size:24px}
+.vit-level-inline{display:flex;align-items:center;gap:2px;white-space:nowrap;color:var(--vit-muted)}.vit-level-inline input{width:35px;height:28px;padding:0;text-align:center;background:transparent;border:0;font-size:16px}.vit-level-inline input[name="system.level"]{font-weight:bold;color:var(--vit-text)}
+.vit-inspiration-inline{display:inline-flex;align-items:center;gap:5px;margin-left:12px;color:#e4bf40}.vit-inspiration-inline i{font-size:15px}.vit-resource-line .vit-inspiration-inline button{width:22px;height:22px}
+.vit-header-attributes{flex:0 0 300px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;border:0;padding:0;overflow:visible}
+.vit-header-attributes .vit-attribute{display:grid;grid-template-columns:28px 1fr;gap:3px;padding:3px}.vit-header-attributes .vit-attribute>button{width:28px;height:26px;min-height:26px}.vit-header-attributes .vit-attribute>input{width:48px;height:26px}.vit-header-attributes .vit-attribute>small{grid-column:1/-1;font-size:8px;white-space:nowrap}.vit-header-attributes .vit-attribute i{font-size:19px}
+.vit-body{display:block;overflow:auto}.vit-sections{overflow:visible;padding:10px 16px}.vit-apply-damage{width:100%;margin-top:8px}
+
+.vit-chat .vit-apply-damage{color:#eee8d5;background:#35382f;border:1px solid #777056}.vit-chat .vit-apply-damage:hover{background:#554c31}
+
+.vit-chat-dice{gap:3px}.vit-chat-dice input{width:32px;flex:0 0 32px}.vit-chat-dice button.vit-success-roll{flex:0 0 27px}.vit-chat-dice button.vit-dice-toggle{font-size:9px;padding:0 2px}.vit-chat-dice button.vit-coin-flip{flex:0 0 79px;font-size:9px;padding:0 2px;white-space:nowrap;line-height:20px}
+.vit-resource-line button.vit-sheet-coin{width:auto;min-width:0;padding:0 6px;font-size:10px;height:26px;white-space:nowrap}
+.vit-coin-result>div{display:flex;align-items:center;gap:10px;padding-top:12px}.vit-coin-result img{width:48px;height:48px;object-fit:contain;border:0}.vit-coin-result span{margin-left:auto;font-size:12px}.vit-coin-settings{padding:12px;display:flex;flex-direction:column;gap:12px}
+
+/* Foundry moves the same controls into notifications when chat is hidden. */
+#chat-notifications .vit-chat-dice{display:none!important}
+/* 0.1.9 shared world themes, resource row and journal editors. */
+.vitruviy{--vit-font:Arial,sans-serif;--vit-heading:Georgia,serif;--vit-card-bg:#191b19;--vit-title-bg:#30312d;font-family:var(--vit-font)}
+.vit-name-row .vit-name,.vit-panel h2,.vit-card header button{font-family:var(--vit-heading)}
+.vit-resource-line{flex-wrap:wrap;gap:5px}.vit-currencies{display:inline-flex;flex-wrap:wrap;gap:5px;margin-left:7px}.vit-currencies label{display:inline-flex;align-items:center;gap:4px;font-size:10px}.vit-currencies input{width:48px;height:26px;padding:0 3px}.vit-inspiration-inline{margin-left:5px}
+.vit-level-inline small{font-size:9px;letter-spacing:.5px;color:var(--vit-muted)}.vit-level-inline input{width:29px}.vit-name-row .vit-name{font-size:23px}
+.vit-panel h2{background:var(--vit-title-bg)}.vit-card{background:var(--vit-card-bg)}
+.vit-bio prose-mirror{display:block;padding:12px;min-height:120px}.vit-bio prose-mirror .editor-container{min-height:150px}.vit-bio prose-mirror .editor-content{min-height:120px}.vit-rich-view{padding:12px;min-height:100px;line-height:1.6}.vit-bio .editor-content,.vit-rich-view{overflow-wrap:anywhere}.vit-bio .editor-menu{color:var(--vit-text)}
+.vit-chat footer{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}.vit-chat footer .vit-item-damage{margin-left:auto;text-align:right}.vit-item-damage small{display:block;font-size:11px}.vit-public-description{white-space:pre-wrap;overflow-wrap:anywhere}
+body[data-vit-theme="starwars"] .vitruviy{--vit-bg:#080e18;--vit-panel:#101e2d;--vit-text:#e3f1ff;--vit-muted:#97b4ce;--vit-gold:#f7ce4f;--vit-line:#376580;--vit-card-bg:#0b1622;--vit-title-bg:#17344a;--vit-font:Arial,sans-serif;--vit-heading:Arial,sans-serif}
+body[data-vit-theme="starwars"] .vit-panel{border-radius:3px;box-shadow:inset 0 0 8px #24536a55}body[data-vit-theme="starwars"] .vit-panel h2{color:#f7ce4f;letter-spacing:2px}body[data-vit-theme="starwars"] .vit-health-track span{background:#55bee9}body[data-vit-theme="starwars"] .vit-name{color:#f7ce4f}
+body[data-vit-theme="starwars"] .vit-chat{background:#0d1d2a;border-color:#376580;color:#e3f1ff;font-family:Arial,sans-serif}body[data-vit-theme="starwars"] .vit-chat header{color:#f7ce4f;font-family:Arial,sans-serif}
+body[data-vit-theme="cyberpunk"] .vitruviy{--vit-bg:#111214;--vit-panel:#1b1c1f;--vit-text:#f2efea;--vit-muted:#aaa5a0;--vit-gold:#ef3838;--vit-line:#6f2525;--vit-card-bg:#121315;--vit-title-bg:#321818;--vit-font:Consolas,"Courier New",monospace;--vit-heading:Consolas,"Courier New",monospace}
+body[data-vit-theme="cyberpunk"] .vit-panel{border-radius:0;border-left:3px solid #d71920}body[data-vit-theme="cyberpunk"] .vit-panel h2{color:#ef3838;letter-spacing:1px}body[data-vit-theme="cyberpunk"] .vit-health-track span{background:#d71920}body[data-vit-theme="cyberpunk"] .vit-name{color:#ef3838}body[data-vit-theme="cyberpunk"] .vit-chat{background:#1b1c1f;border:1px solid #6f2525;border-left:3px solid #d71920;border-radius:0;font-family:Consolas,"Courier New",monospace}body[data-vit-theme="cyberpunk"] .vit-chat header{color:#ef3838;font-family:Consolas,"Courier New",monospace}
+body[data-vit-theme="starwars"] #sidebar-tabs [aria-selected="true"]{color:#f7ce4f;border-color:#376580;background:#17344a}body[data-vit-theme="cyberpunk"] #sidebar-tabs [aria-selected="true"]{color:#ef3838;border-color:#d71920;background:#321818}
+
+.vit-inspiration-inline{white-space:nowrap;flex-wrap:nowrap}.vit-bio prose-mirror:not([open])>button.toggle{display:block}
+
+.vit-item-body header input{font-family:var(--vit-heading)}
+body[data-vit-theme="starwars"] #sidebar-tabs .ui-control.active,body[data-vit-theme="starwars"] #sidebar-tabs [aria-pressed="true"]{color:#f7ce4f;border-color:#376580;background:#17344a}
+body[data-vit-theme="cyberpunk"] #sidebar-tabs .ui-control.active,body[data-vit-theme="cyberpunk"] #sidebar-tabs [aria-pressed="true"]{color:#ef3838;border-color:#d71920;background:#321818}
+
+.vit-chat header{display:flex;align-items:center;gap:6px}.vit-chat-item-icon{width:26px;height:26px;object-fit:contain;border:0}.vit-resource-toggle{margin-top:8px;width:100%}.vit-item-body textarea{min-height:95px}
+.vit-chat button{color:inherit;background:rgba(128,128,128,.15);border:1px solid currentColor}.vit-chat button:hover{background:rgba(128,128,128,.3)}
+.vit-critical{color:#ffce45;font-size:12px;margin-left:6px}.vit-coin-preview{width:40px;height:40px;object-fit:contain;border:0}
+#vitruviy-customization .window-content{display:flex;flex-direction:column;overflow:hidden;min-height:0}
+#vitruviy-customization .vit-coin-settings{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+#vitruviy-customization .vit-customization-scroll{flex:1;min-height:0;overflow-y:scroll;overflow-x:hidden;padding-right:12px;scrollbar-gutter:stable}
+.vit-customization-footer{flex-shrink:0;padding-top:10px;border-top:1px solid #666}.vit-atlas-preview{display:flex;gap:16px;justify-content:center;margin:10px 0}
+.vit-coin-atlas-face{display:inline-block;width:48px;height:48px;flex-shrink:0;background-repeat:no-repeat;border:0}
+
+/* Shared spacing and surface rules. Foundry's application layer otherwise
+   overrides editor padding; important declarations are limited to that boundary. */
+.vitruviy{--vit-field-bg:#191b19;--vit-control-bg:#30312d;--vit-accent:#c6ad68;--vit-radius:6px;--vit-space:12px}
+.vitruviy,.vitruviy *{box-sizing:border-box}
+.vitruviy .window-header{background:var(--vit-panel);border-bottom:1px solid var(--vit-line);color:var(--vit-text)}
+.vitruviy :is(input,select,textarea){padding:6px 10px;background:var(--vit-field-bg);border-color:var(--vit-line);color:var(--vit-text);font:inherit}
+.vitruviy :is(input:not([type="checkbox"]),select){min-height:32px}
+.vitruviy textarea{line-height:1.5;resize:vertical}
+.vitruviy button{background:var(--vit-control-bg);border-radius:var(--vit-radius)}
+.vitruviy :is(input,select,textarea):focus{border-color:var(--vit-accent);box-shadow:0 0 0 1px var(--vit-accent)}
+.vitruviy input[type="checkbox"]{accent-color:var(--vit-accent);flex:0 0 16px;padding:0}
+.vitruviy input[type="checkbox"]{--checkbox-checked-color:var(--vit-accent)!important;--checkbox-background-color:var(--vit-field-bg)!important;--checkbox-checkmark-color:var(--vit-accent)!important}
+.vitruviy{--color-scrollbar:var(--vit-accent);scrollbar-color:var(--vit-accent) var(--vit-field-bg)}
+.vit-dialog .window-content{padding:16px!important;background:var(--vit-bg)!important}
+.vit-dialog .dialog-content{margin:0 0 16px;line-height:1.5}
+.vit-dialog .dialog-content>label{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.vit-dialog .dialog-content>select{width:100%}
+.vit-dialog .dialog-buttons{gap:8px}
+.vit-dialog .dialog-buttons button{min-height:36px}
+.vitruviy :is(.vit-name,.vit-level-inline input){background:transparent}
+.vitruviy .vit-name-row{gap:12px;margin-bottom:12px}
+.vitruviy .vit-name{padding:0;line-height:1.2}
+.vitruviy .vit-level-inline{gap:4px}
+.vitruviy .vit-level-inline input{padding:2px;min-height:28px}
+.vitruviy .vit-resource-line{row-gap:8px;column-gap:6px;margin-top:10px}
+.vitruviy .vit-resource-line input{padding:3px 5px;min-height:28px;height:28px}
+.vitruviy .vit-currencies{gap:8px}
+.vitruviy .vit-inspiration-inline{gap:6px}
+.vitruviy .vit-header-attributes{gap:8px;flex-basis:300px}
+.vitruviy .vit-header-attributes .vit-attribute{padding:4px;gap:4px;border:1px solid var(--vit-line);border-radius:var(--vit-radius);background:var(--vit-field-bg)}
+.vitruviy .vit-header-attributes input{min-height:28px;padding:2px 4px;width:100%;text-align:center}
+.vitruviy .vit-header-attributes small{line-height:1.3}
+.vitruviy .vit-sections{gap:12px;padding:16px}
+.vitruviy .vit-panel h2{min-height:42px;padding:9px 14px;line-height:1.3}
+.vitruviy .vit-cards{padding:14px;gap:12px}
+.vitruviy .vit-card{padding:12px;border-color:var(--vit-line);border-left-color:var(--vit-accent)}
+.vitruviy .vit-card p{margin:10px 0;line-height:1.6;color:var(--vit-muted)}
+.vitruviy .vit-empty{padding:4px 0;line-height:1.5}
+.vitruviy .vit-group-condition .vit-cards{padding:8px 12px}
+.vitruviy .vit-bio prose-mirror{padding:0!important;min-height:140px}
+.vitruviy .vit-bio :is(.editor-container,.editor-content){min-height:140px}
+.vitruviy .vit-bio .editor-content{padding:16px!important;line-height:1.6;color:var(--vit-text);font-family:var(--vit-font)}
+.vitruviy .vit-bio prose-mirror>button.toggle{top:8px;right:8px;width:28px;height:28px;z-index:1}
+.vitruviy .vit-bio .editor-menu{padding:6px 10px!important;background:var(--vit-title-bg);border-bottom:1px solid var(--vit-line)}
+.vitruviy .vit-bio .editor-container{background:var(--vit-panel)}
+.vitruviy :is(.editor-content,.vit-rich-view)>:first-child{margin-top:0!important}
+.vitruviy :is(.editor-content,.vit-rich-view)>:last-child{margin-bottom:0!important}
+.vitruviy :is(.editor-content,.vit-rich-view) :is(h1,h2,h3){padding:0;background:none;border:0;display:block;text-transform:none;letter-spacing:normal;line-height:1.3;margin:16px 0 8px;min-height:0}
+.vitruviy :is(.editor-content,.vit-rich-view) p{margin:0 0 10px}
+.vitruviy .vit-rich-view{padding:16px;min-height:140px}
+.vitruviy .vit-item-body{padding:20px;gap:14px}
+.vitruviy .vit-item-body header{gap:14px;margin-bottom:4px}
+.vitruviy .vit-item-body label{gap:6px;line-height:1.4;font-size:13px}
+.vitruviy .vit-item-body :is(input,textarea,select){width:100%}
+.vitruviy .vit-item-body .vit-check-label{padding:9px 12px;gap:10px;border:1px solid var(--vit-line);border-radius:var(--vit-radius);background:var(--vit-field-bg)}
+.vitruviy .vit-item-body .vit-check-label input{width:16px;min-height:16px}
+.vitruviy .vit-hint{margin:0;line-height:1.5}
+.vitruviy .vit-item-actions{gap:8px;padding-top:12px;border-top:1px solid var(--vit-line);flex-wrap:wrap}
+.vitruviy .vit-item-actions button{min-height:36px}
+#vitruviy-customization .vit-coin-settings{padding:16px;gap:14px}
+#vitruviy-customization .vit-customization-scroll{display:flex;flex-direction:column;gap:12px;padding-right:12px}
+#vitruviy-customization h2{margin:4px 0 0;padding:0 0 8px;border-bottom:1px solid var(--vit-line);font:700 15px var(--vit-heading);color:var(--vit-accent);line-height:1.4}
+#vitruviy-customization label{display:flex;flex-direction:column;gap:6px;line-height:1.4;font-size:13px;color:var(--vit-muted)}
+#vitruviy-customization .form-group{display:grid;grid-template-columns:52px minmax(0,1fr);align-items:center;gap:12px;margin:0}
+#vitruviy-customization file-picker{width:100%;min-width:0;gap:6px}
+#vitruviy-customization file-picker input{min-width:0;width:100%}
+#vitruviy-customization :is(.hint,.vit-atlas-preview){margin:0;line-height:1.5}
+#vitruviy-customization .hint{font-size:12px;color:var(--vit-muted)}
+#vitruviy-customization .vit-atlas-preview{padding:12px;border:1px solid var(--vit-line);border-radius:var(--vit-radius);background:var(--vit-field-bg)}
+#vitruviy-customization .vit-customization-footer{padding-top:12px;border-color:var(--vit-line)}
+#vitruviy-customization .vit-customization-footer button{min-height:36px;width:100%}
+.vit-roll-form{gap:14px;padding:4px 0}
+.vit-roll-form label{display:grid;grid-template-columns:minmax(100px,1fr) minmax(0,1.4fr);gap:16px;line-height:1.4;align-items:center}
+.vit-roll-form :is(input:not([type="checkbox"]),select){width:100%;height:34px;padding:6px 10px}
+.vit-roll-form input[type="checkbox"]{width:18px;height:18px;justify-self:end}
+body[data-vit-theme="cyberpunk"] .vitruviy{--vit-field-bg:#121315;--vit-control-bg:#292326;--vit-accent:#ef3838;--vit-radius:2px}
+body[data-vit-theme="cyberpunk"] .vitruviy .vit-health-track{background:#3a2020}
+body[data-vit-theme="cyberpunk"] .vitruviy .vit-resource-line>i{color:#ef3838}
+body[data-vit-theme="cyberpunk"] .vitruviy .vit-description{color:#aaa5a0}
+body[data-vit-theme="cyberpunk"] .vitruviy :is(.vit-damage,.vit-cost){color:#ef3838}
+body[data-vit-theme="cyberpunk"] .vitruviy .vit-cost{background:#321818}
+body[data-vit-theme="cyberpunk"] .vit-chat{color:#f2efea}
+body[data-vit-theme="cyberpunk"] .vit-chat .vit-attempt.chosen{border-color:#a72b2b;color:#f2efea}
+body[data-vit-theme="cyberpunk"] .vit-chat .vit-die{background:#292326}
+body[data-vit-theme="cyberpunk"] .vit-chat footer{border-color:#6f2525}
+body[data-vit-theme="cyberpunk"] .vit-chat footer strong{color:#ef3838}
+body[data-vit-theme="starwars"] .vitruviy{--vit-field-bg:#0b1622;--vit-control-bg:#17344a;--vit-accent:#f7ce4f;--vit-radius:3px}
+@media(max-width:800px){.vitruviy .vit-hero{flex-wrap:wrap}.vitruviy .vit-header-attributes{flex:1 1 100%}.vitruviy .vit-sections{grid-template-columns:minmax(0,1fr)}.vitruviy .vit-shell{min-width:0}}
+
+/* Inventory owns the Other section; its right column occupies one fifth. */
+.vitruviy .vit-inventory-columns{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,1fr);align-items:stretch}
+.vitruviy .vit-inventory-main{min-width:0}
+.vitruviy .vit-inventory-columns>.vit-group-other{min-width:0;border:0;border-left:1px solid var(--vit-line);border-radius:0;background:var(--vit-field-bg)}
+.vitruviy .vit-group-other h2{padding:9px 10px;font-size:13px;gap:6px;flex-wrap:wrap}
+.vitruviy .vit-group-other .vit-cards{padding:10px}
+.vitruviy :is(.vit-group-ability,.vit-group-trait,.vit-group-equipment,.vit-group-other)>.vit-cards:not(.vit-icons),
+.vitruviy .vit-inventory-main>.vit-cards:not(.vit-icons){grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),1fr));align-items:start}
+.vitruviy .vit-card{width:100%;max-width:180px;aspect-ratio:3/4;max-height:240px;min-height:0;overflow:hidden;gap:0}
+.vitruviy .vit-card header{flex:0 0 auto;max-height:68px;min-height:28px;overflow:auto;align-items:flex-start;flex-wrap:nowrap;gap:6px}
+.vitruviy .vit-card header img{width:24px;height:24px;flex:0 0 24px}
+.vitruviy .vit-card header button{min-width:0;font-size:12px;line-height:1.4;min-height:24px}
+.vitruviy .vit-card .vit-description{flex:1 1 auto;min-height:0;overflow:auto;margin:10px 0;font-size:12px;line-height:1.5}
+.vitruviy .vit-card>small{flex:0 0 auto;font-size:10px;line-height:1.4;overflow-wrap:anywhere}
+.vitruviy .vit-card footer{flex:0 0 auto;margin-top:auto;padding-top:8px}
+.vitruviy .vit-inventory-columns .vit-empty{font-size:11px}
+
+.vitruviy .vit-card .vit-card-quantity{margin-top:6px;color:var(--vit-muted)}
+.vitruviy .vit-card{cursor:grab}
+.vitruviy .vit-card:active{cursor:grabbing}
+.vitruviy .vit-card footer{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.vitruviy .vit-card footer button{justify-self:end}
+.vitruviy .vit-card footer .vit-use-item{grid-column:1/-1;width:100%;height:28px;font-size:11px}
+.vitruviy .vit-icon-tools .vit-use-item{width:auto;padding:0 5px;white-space:nowrap}
+.vitruviy .vit-group-controls button[aria-pressed="true"]{color:var(--vit-accent);border-color:var(--vit-accent)}
+.vitruviy .vit-group-other .vit-card{aspect-ratio:auto;max-height:180px;min-height:110px;padding:8px}
+.vitruviy .vit-group-other .vit-card header{max-height:34px}
+.vitruviy .vit-group-other .vit-card .vit-description{max-height:34px;margin:6px 0}
+.vitruviy .vit-group-other .vit-card footer{padding-top:5px}
+.vitruviy .vit-group-other .vit-card>small{font-size:9px}
+.vitruviy .vit-icon-card .vit-icon-main{cursor:pointer}
+/* Theme the enclosing Foundry chat card too, not only its article. */
+.chat-message:has(.vit-chat){background:#202120!important;color:#e6e1cf!important;border:1px solid #41423b!important;box-shadow:none!important}
+.chat-message:has(.vit-chat) :is(.message-header,.message-header .message-sender,.message-header time,.message-metadata){color:inherit!important;background:transparent!important}
+.chat-message:has(.vit-chat) .message-content{background:transparent!important;color:inherit!important}
+body[data-vit-theme="cyberpunk"] .chat-message:has(.vit-chat){background:#111214!important;color:#f2efea!important;border-color:#6f2525!important}
+body[data-vit-theme="starwars"] .chat-message:has(.vit-chat){background:#080e18!important;color:#e3f1ff!important;border-color:#376580!important}
+
+/* Fixed tracks keep gaps uniform instead of stretching unused grid columns. */
+.vitruviy .vit-group-ability{grid-column:1/-1}
+.vitruviy :is(.vit-group-ability,.vit-group-equipment,.vit-group-other)>.vit-cards:not(.vit-icons),
+.vitruviy .vit-inventory-main>.vit-cards:not(.vit-icons){grid-template-columns:repeat(auto-fill,minmax(min(100%,180px),180px));gap:12px;justify-content:start;padding:12px}
+.vitruviy .vit-group-other>.vit-cards:not(.vit-icons){grid-template-columns:minmax(0,1fr);padding:10px}
+.vitruviy .vit-card footer{display:grid;grid-template-columns:minmax(0,1fr) repeat(3,22px);align-items:center;gap:4px}
+.vitruviy .vit-card footer button{width:22px;height:26px;padding:0;min-height:26px;font-size:11px}
+.vitruviy .vit-card footer .vit-use-item{grid-column:auto;width:100%;height:26px;min-width:0;font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 2px}
+.vitruviy .vit-edit-toggle{display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;height:28px;padding:0 6px;font-size:10px;color:var(--vit-muted)}
+.vit-toggle-track{position:relative;display:inline-block;width:24px;height:14px;border-radius:8px;background:var(--vit-line)}
+.vit-toggle-track::after{content:'';position:absolute;left:2px;top:2px;width:10px;height:10px;border-radius:50%;background:var(--vit-text);transition:transform .15s}
+.vit-edit-toggle[aria-checked="true"] .vit-toggle-track{background:var(--vit-accent)}
+.vit-edit-toggle[aria-checked="true"] .vit-toggle-track::after{transform:translateX(10px)}
+.vitruviy .vit-values-locked .vit-header-attributes .vit-attribute{border-color:transparent;background:transparent}
+.vitruviy .vit-values-locked :is(input[name="system.health.value"],input[name^="system.attributes."],input[name="system.level"],input[name="system.experience.value"]){background:transparent!important;border-color:transparent!important;box-shadow:none!important;opacity:1;color:var(--vit-text);cursor:default;pointer-events:none}
+
+/* Compact character header: reduce fixed controls by roughly one quarter. */
+.vitruviy .vit-hero{gap:12px;padding:12px 16px;align-items:center;flex-wrap:wrap}
+.vitruviy .vit-identity{flex:1 1 400px;max-width:440px}
+.vitruviy .vit-name-row{gap:8px;margin-bottom:8px}
+.vitruviy .vit-name-row .vit-name{font-size:22px}
+.vitruviy .vit-level-inline{gap:2px}
+.vitruviy .vit-level-inline input{width:27px;height:22px;min-height:22px;font-size:14px;padding:0}
+.vitruviy .vit-health-track{height:6px}
+.vitruviy .vit-resource-line{gap:4px;margin-top:7px;font-size:11px;flex-wrap:wrap}
+.vitruviy .vit-resource-line input{width:32px;height:22px;min-height:22px;padding:2px 3px}
+.vitruviy .vit-currencies{gap:6px}
+.vitruviy .vit-inspiration-inline{gap:5px;margin-left:6px}
+.vitruviy .vit-resource-line .vit-inspiration-spend{display:inline-grid;grid-template-columns:18px auto;align-items:center;gap:4px;width:auto;min-width:44px;height:26px;min-height:26px;padding:2px 5px;color:var(--vit-gold);font-size:14px}
+.vitruviy .vit-inspiration-spend i{font-size:15px}
+.vitruviy .vit-inspiration-spend strong{font-size:14px}
+.vitruviy .vit-inspiration-spend:disabled{opacity:.55;cursor:default}
+.vitruviy .vit-header-attributes{flex:0 0 228px;gap:5px;max-width:228px}
+.vitruviy .vit-header-attributes .vit-attribute{grid-template-columns:22px minmax(0,1fr);gap:2px;padding:3px}
+.vitruviy .vit-header-attributes .vit-attribute>button{width:22px;height:22px;min-height:22px;padding:0}
+.vitruviy .vit-header-attributes .vit-attribute>input{width:100%;height:22px;min-height:22px;margin:0;padding:1px 2px;font-size:13px}
+.vitruviy .vit-header-attributes .vit-attribute i{font-size:16px}
+.vitruviy .vit-header-attributes .vit-attribute small{font-size:7px;letter-spacing:0;line-height:1.2}
+.vitruviy .vit-header-conditions{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:7px;min-height:0}
+.vitruviy .vit-header-conditions:empty{display:none}
+.vitruviy .vit-condition-token{position:relative;display:inline-flex;flex:0 0 24px;width:24px;height:24px}
+.vitruviy .vit-condition-image{border:0;background:transparent;width:24px;height:24px;min-height:24px;padding:0;box-shadow:none}
+.vitruviy .vit-condition-image img{width:24px;height:24px;object-fit:contain;border:0}
+.vitruviy .vit-condition-remove{position:absolute;top:-4px;right:-4px;width:12px;height:12px;min-height:12px;padding:0;font-size:8px;opacity:0}
+.vitruviy .vit-condition-token:hover .vit-condition-remove,.vitruviy .vit-condition-token:focus-within .vit-condition-remove{opacity:1}
+.vitruviy .vit-condition-add{width:24px;height:24px;min-height:24px;padding:0;font-size:11px;border:0;background:transparent;color:var(--vit-muted)}
+.vitruviy .vit-values-locked .vit-name{background:transparent!important;border:0!important;box-shadow:none!important;opacity:1;color:var(--vit-text);pointer-events:none}
+.vitruviy .vit-values-locked .vit-portrait>img{cursor:default}
+@media(max-width:800px){.vitruviy .vit-identity{max-width:none;flex-basis:300px}.vitruviy .vit-header-attributes{flex:0 0 228px}}
+
+/* Single-row header with title-bar editing and health inside the portrait. */
+.vitruviy.vit-actor>.window-header{gap:8px}
+.vitruviy:is(.vit-actor,.vit-item)>.window-header .vit-title-edit{height:24px;min-height:24px;padding:0 7px;border:0;border-radius:12px;background:var(--vit-field-bg);gap:7px;flex:0 0 auto;color:var(--vit-muted)}
+.vitruviy .vit-title-edit i{font-size:10px}
+.vitruviy .vit-title-edit[aria-checked="true"]{color:var(--vit-accent)}
+.vitruviy.vit-actor .vit-hero{display:grid;grid-template-columns:88px minmax(150px,1fr) minmax(360px,450px);grid-template-rows:auto auto;column-gap:14px;row-gap:8px;padding:12px 16px;align-items:center}
+.vitruviy.vit-actor .vit-portrait{grid-column:1;grid-row:1/3;width:88px;height:96px;overflow:hidden;border:1px solid var(--vit-line);border-radius:var(--vit-radius);background:var(--vit-field-bg)}
+.vitruviy.vit-actor .vit-portrait>img{display:block;width:100%;height:100%;border:0;border-radius:0;object-fit:cover;object-position:center 35%}
+.vitruviy.vit-actor .vit-portrait>button{right:3px;bottom:25px;width:22px;height:22px;min-height:22px;padding:0;font-size:11px;z-index:3}
+.vitruviy .vit-avatar-health{position:absolute;bottom:0;left:0;right:0;height:22px;background:#12251c;border-top:1px solid #41694c;color:#f3fff6;isolation:isolate}
+.vitruviy .vit-avatar-health .vit-health-track{position:absolute;inset:0;height:100%;border-radius:0;background:transparent;margin:0;z-index:-1}
+.vitruviy .vit-avatar-health .vit-health-track span{height:100%;background:#348153;transition:width .2s}
+.vitruviy .vit-health-number{display:flex;align-items:center;justify-content:center;gap:3px;height:100%;font-size:10px;font-weight:700;line-height:1}
+.vitruviy .vit-health-number input{width:28px;min-width:0;height:18px;min-height:18px;padding:0;text-align:center;font-size:10px;font-weight:700;color:#f3fff6;background:#12251c80;border:1px solid #92bf9b;border-radius:2px}
+.vitruviy .vit-values-locked .vit-health-number input{color:#f3fff6!important}
+.vitruviy.vit-actor .vit-identity{grid-column:2;grid-row:1;max-width:none;min-width:0;align-self:center}
+.vitruviy.vit-actor .vit-identity .vit-name{display:block;width:100%;font-size:22px;line-height:1.2;height:29px;min-height:29px;padding:0}
+.vitruviy.vit-actor .vit-level-inline{justify-content:flex-start;margin-top:2px;gap:2px;font-size:11px}
+.vitruviy.vit-actor .vit-level-inline input{font-size:12px;width:24px;height:20px;min-height:20px}
+.vitruviy.vit-actor .vit-header-attributes{grid-column:3;grid-row:1;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));max-width:none;gap:4px;width:100%;padding:0}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute{display:grid;grid-template-columns:13px minmax(0,1fr);grid-template-rows:27px 15px;gap:2px;padding:3px 2px;min-width:0;align-items:center}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>input{grid-row:1;grid-column:1/-1;width:100%;height:25px;min-height:25px;font-size:18px;font-weight:700;text-align:center}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>button{grid-row:2;grid-column:1;width:13px;height:15px;min-height:15px;padding:0}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute i{font-size:11px}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>small{grid-row:2;grid-column:2;font-size:7px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left}
+.vitruviy .vit-header-utility{grid-column:2/4;grid-row:2;display:flex;align-items:center;justify-content:space-between;gap:10px;min-width:0}
+.vitruviy .vit-header-utility .vit-header-conditions{margin:0;flex:1 1 auto;min-width:24px;gap:5px}
+.vitruviy .vit-header-utility .vit-resource-line{margin:0;flex:0 1 auto;justify-content:flex-end;font-size:10px}
+.vitruviy .vit-header-utility .vit-inspiration-spend{height:24px;min-height:24px}
+.vitruviy .vit-header-utility .vit-sheet-coin{height:24px;min-height:24px}
+@media(max-width:800px){.vitruviy.vit-actor .vit-hero{grid-template-columns:76px minmax(120px,1fr)}.vitruviy.vit-actor .vit-portrait{width:76px;grid-row:1/3}.vitruviy.vit-actor .vit-header-attributes{grid-column:2;grid-row:2;max-width:none}.vitruviy.vit-actor .vit-header-utility{grid-column:1/3;grid-row:3}}
+
+/* Square portrait, bounded header rows and aligned numeric roll controls. */
+.vitruviy.vit-actor .vit-portrait{width:88px;height:88px;aspect-ratio:1}
+.vitruviy.vit-actor .vit-hero{flex:0 0 auto;min-height:min-content;grid-template-rows:minmax(48px,auto) minmax(28px,auto);padding-bottom:14px;overflow:visible}
+.vitruviy .vit-header-utility{align-self:stretch;align-items:center;flex-wrap:wrap;min-height:28px;row-gap:6px}
+.vitruviy .vit-header-utility .vit-resource-line{min-width:0;max-width:100%;flex-wrap:wrap;row-gap:6px}
+.vitruviy .vit-header-utility .vit-currencies{flex-wrap:wrap}
+.vitruviy .vit-header-utility .vit-inspiration-inline{flex-shrink:0}
+.vitruviy.vit-actor .vit-header-attributes{gap:0;align-items:stretch}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute{display:flex;flex-direction:column;justify-content:center;gap:3px;padding:3px 4px;border:0;border-right:1px solid var(--vit-line);border-radius:0;background:transparent;min-width:0}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute:first-child{border-left:1px solid var(--vit-line)}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>button,
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute-value{position:relative;display:flex;align-items:center;justify-content:center;width:100%;height:34px;min-height:34px;padding:0;border:0;background:transparent;border-radius:0;isolation:isolate;color:var(--vit-text)}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute i{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:30px;line-height:1;color:var(--vit-muted);opacity:.3;pointer-events:none;z-index:-1;transition:opacity .15s,color .15s}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute strong{font-size:22px;line-height:1;font-weight:700;text-shadow:0 1px 3px var(--vit-bg);transition:color .15s,filter .15s}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>small{display:block;width:100%;font-size:7px;line-height:1.2;text-align:center;white-space:nowrap;margin:0;min-height:9px}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute-value input{position:relative;width:100%;height:30px;min-height:30px;margin:0;padding:0 2px;font-size:22px;line-height:1;text-align:center;font-weight:700;background:transparent}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>button:hover strong,
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>button:focus-visible strong{color:var(--vit-gold);filter:brightness(1.15)}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>button:hover i,
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>button:focus-visible i,
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute-value:focus-within i{opacity:.45;color:var(--vit-gold)}
+#tooltip.vit-item-tooltip{max-width:340px;max-height:50vh;padding:12px 14px;border:1px solid #777056;background:#202120;color:#e6e1cf;text-align:left;font-size:12px;line-height:1.5;overflow:auto}
+#tooltip.vit-item-tooltip strong{display:block;margin-bottom:6px;font-size:13px}
+#tooltip.vit-item-tooltip p{white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
+body[data-vit-theme="cyberpunk"] #tooltip.vit-item-tooltip{background:#111214;color:#f2efea;border-color:#a72b2b}
+body[data-vit-theme="starwars"] #tooltip.vit-item-tooltip{background:#080e18;color:#e3f1ff;border-color:#376580}
+@media(max-width:800px){.vitruviy.vit-actor .vit-portrait{width:76px;height:76px}}
+.vitruviy .vit-health-number{width:100%;justify-content:center;gap:2px;padding:0;letter-spacing:0;font-variant-numeric:tabular-nums}
+.vitruviy .vit-health-readout{display:block;width:100%;text-align:center;line-height:20px;color:#f3fff6}
+.vitruviy .vit-health-number input{width:26px;appearance:textfield}
+.vitruviy .vit-health-number input::-webkit-inner-spin-button,.vitruviy .vit-health-number input::-webkit-outer-spin-button{appearance:none;margin:0}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute i{width:100%;height:100%;margin:0}
+/* Match the panel edge, accounting for the body's actual scrollbar gutter. */
+.vitruviy.vit-actor .vit-hero{padding-right:calc(16px + var(--vit-scrollbar-gap,0px))}
+
+/* 0.1.22: stable header, taller controls and a subtitle. */
+.vitruviy.vit-actor>.window-content{overflow:hidden;display:flex;flex-direction:column;min-height:0}
+.vitruviy.vit-actor .vit-shell{flex:1;min-height:0;overflow:hidden}
+.vitruviy.vit-actor .vit-hero{border-bottom:0;grid-template-columns:112px minmax(150px,1fr) minmax(360px,450px);grid-template-rows:minmax(76px,auto) minmax(28px,auto);background:var(--vit-bg);position:relative;z-index:2}
+.vitruviy.vit-actor .vit-portrait{width:112px;height:112px;aspect-ratio:1}
+.vitruviy.vit-actor .vit-subtitle{display:block;width:100%;height:23px;min-height:23px;margin:2px 0 4px;padding:0 3px;font-size:12px;color:var(--vit-muted);background:transparent}
+.vitruviy.vit-actor .vit-values-locked .vit-subtitle{border:0;padding:0}
+.vitruviy.vit-actor .vit-values-locked .vit-subtitle:placeholder-shown{color:transparent}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>button,.vitruviy.vit-actor .vit-header-attributes .vit-attribute-value{height:64px;min-height:64px;display:flex;flex-direction:column;gap:5px}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute i{position:static;inset:auto;width:100%;height:28px;flex:0 0 28px;font-size:26px;opacity:.7;z-index:auto}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute>button:hover i{opacity:1}
+.vitruviy.vit-actor .vit-header-attributes .vit-attribute-value input{height:25px;min-height:25px;width:100%}
+.vitruviy.vit-actor .vit-body{flex:1 1 0;min-height:0;overflow:auto}
+@media(max-width:800px){.vitruviy.vit-actor .vit-hero{grid-template-columns:100px minmax(120px,1fr)}.vitruviy.vit-actor .vit-portrait{width:100px;height:100px}}
+
+/* 0.1.23: stable resource alignment and compact panel spacing. */
+.vitruviy.vit-actor .vit-header-utility{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;row-gap:0}
+.vitruviy.vit-actor .vit-header-utility .vit-header-conditions{grid-column:1;grid-row:1;min-width:0}
+.vitruviy.vit-actor .vit-header-utility .vit-resource-line{grid-column:2;grid-row:1;justify-self:end;margin-left:auto}
+.vitruviy.vit-actor .vit-sections{padding-top:0}
+
+/* Header artwork follows the shared world theme. */
+.vitruviy.vit-actor .vit-hero{background-image:var(--vit-header-image,none);background-size:cover;background-position:center;background-repeat:no-repeat}
+
+/* Wind 0.1.28: side navigation and a toolbar that stays inside its own panel. */
+.vitruviy.vit-actor .vit-body{display:grid;grid-template-columns:48px minmax(0,1fr);overflow:hidden;align-items:stretch}
+.vit-side-tabs{display:flex;flex-direction:column;gap:8px;padding:0 4px 12px 8px;border-right:1px solid var(--vit-line);min-height:0}
+.vitruviy .vit-side-tabs button{display:flex;align-items:center;justify-content:center;min-height:40px;height:40px;width:35px;padding:8px 4px;background:transparent;color:var(--vit-muted);border-color:transparent;border-radius:5px 0 0 5px}
+.vit-side-tabs button i{font-size:17px}
+.vitruviy .vit-side-tabs button[aria-selected="true"]{background:var(--vit-title-bg);color:var(--vit-gold);border-color:var(--vit-line)}
+.vit-tab-content{min-width:0;min-height:0;overflow:auto;scrollbar-gutter:stable}
+.vitruviy.vit-actor [data-sheet-panel][hidden]{display:none!important}
+.vitruviy.vit-actor .vit-bio{overflow:visible;position:relative;isolation:isolate}
+.vitruviy.vit-actor .vit-bio h2{position:relative;z-index:0}
+.vitruviy.vit-actor .vit-bio prose-mirror{display:flex;flex-direction:column;gap:0;position:relative;min-height:190px;--menu-height:40px;--min-height:190px}
+.vitruviy.vit-actor .vit-bio prose-mirror .menu-container{position:relative;flex:0 0 auto;min-height:40px;z-index:2;overflow:visible}
+.vitruviy.vit-actor .vit-bio prose-mirror menu{position:relative;inset:auto;display:flex;flex-wrap:wrap;min-height:40px;height:auto;margin:0;padding:6px 10px;gap:4px;background:var(--vit-title-bg);border-bottom:1px solid var(--vit-line);border-radius:0}
+.vitruviy.vit-actor .vit-bio prose-mirror .editor-container{flex:1 1 auto;min-height:150px;position:relative}
+.vitruviy.vit-actor .vit-bio prose-mirror .editor-content{position:relative;inset:auto;min-height:150px;max-height:480px;overflow:auto}
+.vitruviy.vit-actor .vit-bio prose-mirror>button.toggle{top:8px;right:8px;z-index:3}
+
+/* Wind 0.1.29: complete Cyrillic fonts bundled with the system. */
+@font-face{font-family:'Wind Exo 2';src:url('../assets/fonts/exo2/Exo2.ttf') format('truetype');font-style:normal;font-weight:100 900;font-display:swap}
+@font-face{font-family:'Wind Exo 2';src:url('../assets/fonts/exo2/Exo2-Italic.ttf') format('truetype');font-style:italic;font-weight:100 900;font-display:swap}
+@font-face{font-family:'Wind Russo One';src:url('../assets/fonts/russo-one/RussoOne-Regular.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}
+body[data-wind-font='standard'] :is(.vitruviy,.vit-chat){--vit-font:Arial,sans-serif;--vit-heading:Georgia,serif;font-family:var(--vit-font)}
+body[data-wind-font='exo2'] :is(.vitruviy,.vit-chat){--vit-font:'Wind Exo 2',Arial,sans-serif;--vit-heading:'Wind Exo 2',Arial,sans-serif;font-family:var(--vit-font)}
+body[data-wind-font='russoone'] :is(.vitruviy,.vit-chat){--vit-font:'Wind Exo 2',Arial,sans-serif;--vit-heading:'Wind Russo One',Arial,sans-serif;font-family:var(--vit-font)}
+body[data-wind-font] .vitruviy :is(.vit-name,.vit-panel h2,.vit-card header button,.window-title,.vit-item-body h1,.vit-item-body h2){font-family:var(--vit-heading)}
+body[data-wind-font] .vit-chat header{font-family:var(--vit-heading)}
+body[data-wind-font='russoone'] .vitruviy :is(.vit-name,.vit-panel h2,.vit-card header button,.window-title,.vit-item-body h1,.vit-item-body h2),body[data-wind-font='russoone'] .vit-chat header{font-weight:400;font-synthesis:none}
+
+
+/* 0.1.31 Item rich text editors: toolbar stays in normal flow. */
+.vitruviy .vit-item-editor{min-width:0;border:1px solid var(--vit-line);border-radius:var(--vit-radius);background:var(--vit-panel)}
+.vitruviy .vit-item-editor>h3{margin:0;padding:10px 12px;font-size:13px;color:var(--vit-muted);border-bottom:1px solid var(--vit-line)}
+.vitruviy .vit-item-editor prose-mirror{display:flex;flex-direction:column;position:relative;min-height:210px;--menu-height:40px;--min-height:170px}
+.vitruviy .vit-item-editor .menu-container{position:relative;flex:0 0 auto;min-height:40px;z-index:2;overflow:visible}
+.vitruviy .vit-item-editor prose-mirror menu{position:relative;inset:auto;display:flex;flex-wrap:wrap;min-height:40px;height:auto;margin:0;padding:6px 10px;gap:4px;background:var(--vit-title-bg);border-bottom:1px solid var(--vit-line)}
+.vitruviy .vit-item-editor .editor-container{position:relative;flex:1 1 auto;min-height:170px}
+.vitruviy .vit-item-editor .editor-content{position:relative;inset:auto;min-height:170px;max-height:400px;overflow:auto;padding:12px;line-height:1.55;color:var(--vit-text);font-family:var(--vit-font)}
+.vit-item-rich{white-space:normal;overflow-wrap:anywhere}
+.vit-item-rich>:first-child{margin-top:0}.vit-item-rich>:last-child{margin-bottom:0}
+.vit-item-rich p{margin:0 0 .6em}.vit-item-rich :is(ul,ol){margin:.4em 0;padding-left:1.5em}
+.vit-item-rich :is(h1,h2,h3,h4){font-family:var(--vit-heading);font-size:1.1em;line-height:1.3;margin:.7em 0 .4em}
+#tooltip.vit-item-tooltip .vit-item-rich p{white-space:normal;margin:0 0 .5em}
+
+/* 0.1.32 Charges and dependencies, separate from stack quantity. */
+.vit-charge-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.vit-charge-source{padding:12px;border:1px dashed var(--vit-line);border-radius:var(--vit-radius);background:var(--vit-field-bg)}
+.vit-charge-source h3{margin:0 0 8px;font-size:13px;color:var(--vit-muted)}
+.vit-charge-source-name{display:flex;align-items:center;gap:8px;margin-bottom:10px}.vit-charge-source-name img{width:32px;height:32px;object-fit:contain;border:0}.vit-charge-source-name strong{flex:1;overflow-wrap:anywhere}.vit-charge-source-name button{flex:0 0 28px;padding:0}
+.vit-charge-source p{font-size:12px;margin:6px 0}.vit-card-charges,.vit-charge-receipt{color:var(--vit-muted);font-size:12px}
+
+/* 0.1.34 Currency widths follow digits; wrap the utility row before overflowing. */
+.vitruviy.vit-actor .vit-currencies input{width:var(--vit-currency-width,5ch);min-width:4ch;max-width:none;flex:0 0 auto;box-sizing:content-box;font-variant-numeric:tabular-nums;appearance:textfield;-moz-appearance:textfield}
+.vitruviy .vit-currencies input::-webkit-inner-spin-button,.vitruviy .vit-currencies input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.vitruviy.vit-actor .vit-header-utility{grid-template-columns:minmax(0,1fr) minmax(0,auto)}
+.vitruviy.vit-actor .vit-currencies{min-width:0;max-width:100%;align-items:center}
+.vitruviy.vit-actor .vit-currency-transfer{width:28px;min-height:24px;height:24px;padding:0}
+.vit-charge-refund{width:100%;margin-top:8px}
+
+/* 0.1.35 Item sections keep editors alive when switching. */
+.vit-item-tabs{display:flex;gap:6px;border-bottom:1px solid var(--vit-line);padding-bottom:10px}
+.vit-item-tabs button{flex:1;min-height:34px}.vit-item-tabs button[aria-selected="true"]{color:var(--vit-gold);border-color:var(--vit-gold)}
+.vit-item-tab-panel{display:flex;flex-direction:column;gap:14px;min-width:0}.vit-item-tab-panel[hidden]{display:none!important}
+
+.vit-expanded-effects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;padding:12px}
+.vit-expanded-effect{background:var(--vit-bg);border:1px solid var(--vit-line);border-radius:var(--vit-radius);padding:14px;overflow-wrap:anywhere}
+.vit-expanded-effect.disabled{opacity:.6}.vit-expanded-effect header{display:flex;align-items:center;gap:10px;margin-bottom:12px}.vit-expanded-effect header img{width:36px;height:36px;object-fit:contain;border:0}.vit-expanded-effect header strong{flex:1}.vit-expanded-effect header small{font-size:10px;color:var(--vit-muted)}
+.vit-expanded-effect footer{display:flex;gap:8px;margin-top:12px}.vit-expanded-effect footer button{flex:1}.vit-effect-change{margin:6px 0;color:var(--vit-gold)}
+.vit-resource-status{color:var(--vit-muted);font-size:12px;margin:8px 0}
+
+/* 0.1.38 Independent, live card scales. Grid tracks account for layout zoom. */
+.vitruviy .vit-group-controls{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.vitruviy .vit-card-scale{display:inline-flex;align-items:center;gap:5px;margin-right:6px;font-size:11px;font-weight:normal;letter-spacing:normal;white-space:nowrap}
+.vitruviy .vit-card-scale input[type="range"]{width:90px;min-width:64px;height:18px;min-height:0;margin:0;padding:0;border:0;background:transparent;accent-color:var(--vit-accent);cursor:pointer}
+.vitruviy .vit-card-scale output{min-width:35px;font-size:10px;color:var(--vit-muted);font-variant-numeric:tabular-nums}
+.vitruviy .vit-group-ability[data-card-scale]>.vit-cards:not(.vit-icons),.vitruviy .vit-group-equipment[data-card-scale]>.vit-inventory-columns>.vit-inventory-main>.vit-cards:not(.vit-icons){grid-template-columns:repeat(auto-fill,minmax(min(100%,calc(180px * var(--vit-card-scale))),calc(180px * var(--vit-card-scale))))}
+.vitruviy .vit-group-ability[data-card-scale]>.vit-cards>.vit-card,.vitruviy .vit-group-equipment[data-card-scale]>.vit-inventory-columns>.vit-inventory-main>.vit-cards>.vit-card{zoom:var(--vit-card-scale);width:calc(100% / var(--vit-card-scale));max-width:180px}
+.vitruviy .vit-group-ability[data-card-scale]>.vit-icons>.vit-icon-card,.vitruviy .vit-group-equipment[data-card-scale]>.vit-inventory-columns>.vit-inventory-main>.vit-icons>.vit-icon-card{zoom:var(--vit-card-scale)}
+
+/* 0.1.40 Actor-specific formula resources beside currencies. */
+.vitruviy .vit-custom-resources{display:inline-flex;align-items:center;flex-wrap:wrap;gap:6px;min-width:0}
+.vitruviy .vit-custom-resource{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--vit-line);border-radius:4px;padding:2px 6px;background:var(--vit-field-bg);font-size:10px;max-width:100%}
+.vitruviy .vit-custom-resource-name{max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--vit-muted)}
+.vitruviy .vit-custom-resource-value{display:inline-flex;align-items:center;gap:3px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.vitruviy .vit-custom-resource input{width:5ch;height:22px;min-height:22px;padding:0 3px;text-align:center}
+.vitruviy .vit-custom-resource-gear{width:22px;height:22px;min-height:22px;padding:0}.vitruviy .vit-custom-resource.invalid{border-color:var(--vit-accent)}
+.vitruviy .vit-resource-settings{display:flex;flex-direction:column;gap:12px;padding:18px}.vitruviy .vit-resource-settings label{display:flex;align-items:center;justify-content:space-between;gap:14px}.vitruviy .vit-resource-settings label[hidden]{display:none}.vitruviy .vit-resource-settings input{width:65%;min-height:30px}
+
+.vitruviy .vit-branches{display:flex;justify-content:center;gap:4px;margin-top:4px}.vitruviy .vit-branches button{display:flex;flex-direction:column;align-items:center;width:28px;padding:2px;gap:1px;line-height:1.1;font-size:12px}.vitruviy .vit-branches i{font-size:11px;opacity:.75}.vitruviy .vit-branches button:hover i{opacity:1}
+
+.vitruviy .vit-chat-targets{display:grid;gap:5px;margin-top:8px}.vitruviy .vit-chat-target{display:flex;flex-wrap:wrap;align-items:center;gap:5px;border-top:1px solid var(--vit-border,#633);padding-top:5px}.vitruviy .vit-chat-target button{width:auto;margin-left:auto}.vitruviy .vit-player-dice-list{overflow:auto;min-height:0}.vitruviy .vit-player-dice-list .vit-panel{padding:8px;margin-bottom:8px}
+
+.vitruviy.vit-actor .vit-header-attributes .vit-branches i{position:static;inset:auto;width:auto;height:12px;flex:0 0 12px;font-size:12px;opacity:.7;z-index:auto}.vitruviy.vit-actor .vit-header-attributes .vit-branches button{height:32px;min-height:32px;line-height:1;flex:1}.vitruviy.vit-actor .vit-header-attributes .vit-branches{width:100%}
+
+.vitruviy .vit-prepared-count{margin-left:8px;font-size:11px;font-weight:normal;text-transform:none;white-space:nowrap;color:var(--vit-muted)}
+.vitruviy .vit-prepared-toggle{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--vit-muted)}.vitruviy .vit-prepared-toggle input{width:14px;height:14px;min-height:14px;margin:0}
+
+/* Shared cell coordinates are independent of the user's card zoom. */
+.vitruviy .wind-panel-title{display:inline-flex;align-items:center;gap:10px;min-height:24px;line-height:1.2;flex-wrap:wrap}
+.vitruviy .wind-panel-title .vit-prepared-count{margin:0;display:inline-flex;align-items:center;line-height:1.2;font-size:11px}
+.vitruviy .wind-opacity{display:inline-flex;align-items:center;gap:4px;font-size:11px}
+.vitruviy .wind-opacity input{width:52px;height:18px;min-height:18px;padding:0;border:0}
+.vitruviy .wind-grid-viewport{overflow:auto;max-width:100%;padding:8px}
+.vitruviy .wind-grid{--wind-grid-cell:calc(48px * var(--vit-card-scale,1));position:relative;display:grid;grid-template-columns:repeat(var(--wind-grid-columns,18),var(--wind-grid-cell));grid-template-rows:repeat(var(--wind-grid-rows,12),var(--wind-grid-cell));width:calc(var(--wind-grid-columns,18) * var(--wind-grid-cell));padding:0;gap:0;align-items:stretch;background-image:linear-gradient(to right,rgba(180,185,190,var(--wind-grid-opacity,.25)) 1px,transparent 1px),linear-gradient(to bottom,rgba(180,185,190,var(--wind-grid-opacity,.25)) 1px,transparent 1px);background-size:var(--wind-grid-cell) var(--wind-grid-cell);background-color:var(--vit-bg)}
+.vitruviy .wind-grid>.wind-grid-card{display:flex;flex-direction:column;width:100%;height:100%;max-width:none;max-height:none;aspect-ratio:auto;min-height:0;padding:7px;margin:0;zoom:1;border-radius:3px;overflow:hidden;box-sizing:border-box}
+.vitruviy .wind-grid-card header{gap:4px;min-height:32px;max-height:68px;overflow:auto;flex-shrink:0}
+.vitruviy .wind-grid-card header img{width:24px;height:24px;flex:0 0 24px}
+.vitruviy .wind-grid-card header button{font-size:10px;line-height:1.3}
+.vitruviy .wind-grid-card .vit-description{font-size:11px;line-height:1.4;overflow:auto;min-height:0;flex:1;margin:6px 0}
+.vitruviy .wind-grid>.wind-grid-card>small{font-size:9px;flex-shrink:0}
+.vitruviy .wind-grid-card footer{display:flex;gap:2px;padding-top:5px;flex-shrink:0}
+.vitruviy .wind-grid-card footer button{width:17px;min-width:17px;height:24px;min-height:24px;font-size:10px;padding:0;flex:0 0 17px;justify-content:center}
+.vitruviy .wind-grid-card footer .vit-use-item{width:auto;min-width:0;flex:1;font-size:9px;padding:0 2px}
+.vitruviy .wind-grid [data-action="togglePrepared"][aria-pressed="true"]{color:#72e59c;border-color:#4fbb76;background:#173025}
+.vitruviy .wind-grid-icon{position:relative;min-width:0;min-height:0;width:100%;height:100%;padding:1px;border:1px solid var(--vit-line);background:var(--vit-card-bg);box-sizing:border-box;cursor:grab}
+.vitruviy .wind-grid-icon .wind-icon-open{width:100%;height:100%;padding:2px;border:0;background:transparent;display:flex;align-items:center;justify-content:center}
+.vitruviy .wind-grid-icon .wind-icon-open img{width:100%;height:100%;object-fit:contain;border:0}
+.vitruviy .wind-icon-actions{display:none;position:absolute;bottom:0;left:0;right:0;justify-content:space-between;pointer-events:none}
+.vitruviy .wind-grid-icon:is(:hover,:focus-within) .wind-icon-actions{display:flex}
+.vitruviy .wind-icon-actions button{width:18px;height:18px;min-height:18px;padding:0;font-size:10px;pointer-events:auto}
+.vitruviy .wind-grid-icon.wind-prepared{border:2px solid #4fbb76}
+.vitruviy .wind-grid-empty{position:absolute;left:14px;top:12px;margin:0;font-size:12px;pointer-events:none;color:var(--vit-muted)}
+.vitruviy .wind-legacy-cards{display:flex;flex-wrap:wrap;gap:8px}
+.vitruviy .vit-group-equipment>.vit-group-other{margin:0 8px 8px;min-width:0}
+
+.vitruviy .vit-group-custom{grid-column:1 / -1;min-width:0}
+
+.vitruviy .wind-grid-overflow{padding:8px;border:1px solid var(--vit-accent);display:flex;flex-wrap:wrap;gap:6px}.vitruviy .wind-grid-overflow p{width:100%}.vitruviy .wind-grid-overflow button{display:flex;align-items:center;gap:6px;max-width:100%}.vitruviy .wind-grid-overflow img{width:32px;height:32px;object-fit:cover}.vitruviy .wind-card-defaults .form-group{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:12px 0}.vitruviy .wind-card-defaults select{width:160px}
+
+.vitruviy .vit-panel[data-card-scale]>.wind-panel-body>.wind-grid-viewport{height:592px;min-height:160px;min-width:min(240px,100%);width:100%;max-height:none;max-width:100%;box-sizing:border-box;resize:both;scrollbar-gutter:stable}.vitruviy .wind-grid-viewport::-webkit-resizer{background:linear-gradient(135deg,transparent 40%,var(--vit-accent) 42%,var(--vit-accent) 48%,transparent 50%,transparent 60%,var(--vit-accent) 62%,var(--vit-accent) 68%,transparent 70%)}
+
+.vitruviy .wind-panel-body[hidden]{display:none!important}
+
+/* WIND 0.2: compact, predictable card and character headers. */
+.vitruviy .wind-unprepared{filter:grayscale(1);opacity:.52;transition:opacity .12s}
+.vitruviy .wind-unprepared:hover,.vitruviy .wind-unprepared:focus-within{opacity:.8}
+.vitruviy .wind-prepared{opacity:1;filter:none}
+.vitruviy .vit-group-controls>.vit-prepared-count{font-size:10px;line-height:1.2;white-space:nowrap;margin-right:6px;text-transform:none;color:var(--vit-muted)}
+.vitruviy .wind-panel-title{flex:0 1 auto}.vitruviy .vit-group-controls{margin-left:auto}
+.vitruviy.vit-actor .vit-hero{grid-template-columns:144px minmax(130px,1fr) minmax(360px,450px);row-gap:8px;padding-bottom:12px}
+.vitruviy.vit-actor .vit-portrait{grid-row:1/3;align-self:stretch;width:144px;height:auto;min-height:160px;aspect-ratio:auto}
+.vitruviy.vit-actor .vit-portrait>img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 25%;border:0;border-radius:0}
+.vitruviy.vit-actor .vit-portrait .vit-avatar-health{position:absolute;bottom:0;left:0;width:100%;z-index:1}
+.vitruviy.vit-actor .vit-body{margin-top:8px}
+.vitruviy .wind-grid-card header{min-height:24px;max-height:28px;overflow:hidden;align-items:flex-start;margin:0 0 2px;padding:0;gap:4px}
+.vitruviy .wind-grid-card header button{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;text-overflow:ellipsis;line-height:1.25;max-height:2.5em;min-height:0;padding:0;border:0;white-space:normal;overflow-wrap:anywhere}
+.vitruviy .wind-grid-card .vit-description{margin:2px 0 3px}
+.vitruviy .wind-grid-card .vit-description>:first-child{margin-top:0}
+@media(max-width:800px){.vitruviy.vit-actor .vit-hero{grid-template-columns:124px minmax(120px,1fr)}.vitruviy.vit-actor .vit-portrait{width:124px;min-height:160px;grid-row:1/4}.vitruviy.vit-actor .vit-header-utility{grid-column:2;grid-row:3}}
+/* The settings hub keeps unrelated controls in separate, focused sections. */
+.vitruviy .wind-settings-shell{height:100%;min-height:0;display:grid;grid-template-columns:172px minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto}
+.vitruviy .wind-settings-nav{display:flex;flex-direction:column;gap:5px;padding:14px 10px;border-right:1px solid var(--vit-line);background:var(--vit-field-bg)}
+.vitruviy .wind-settings-nav button{text-align:left;white-space:normal;min-height:38px;line-height:1.3;padding:7px 10px;border-color:transparent}
+.vitruviy .wind-settings-nav button[aria-selected="true"]{border-color:var(--vit-accent);color:var(--vit-accent);background:var(--vit-bg)}
+.vitruviy .wind-settings-content{min-height:0;overflow:auto;padding:18px 20px}
+.vitruviy .wind-settings-content [hidden]{display:none!important}
+.vitruviy .wind-settings-content :is(h2,h3){font-size:17px;line-height:1.3;margin:0 0 14px;padding:0;border:0}
+.vitruviy .wind-settings-content h3{font-size:14px;margin-top:22px}
+.vitruviy .wind-settings-content .form-group{display:flex;align-items:center;gap:12px;margin:14px 0}
+.vitruviy .wind-settings-content .form-group>label{flex:1}
+.vitruviy .wind-settings-content .form-group>input,.vitruviy .wind-settings-content .form-group>select{flex:0 1 185px;min-width:0}
+.vitruviy .wind-settings-content .hint{font-size:12px;line-height:1.5;color:var(--vit-muted);margin:6px 0 18px}
+.vitruviy .wind-settings-content>section>label{display:flex;flex-direction:column;gap:8px;margin:12px 0}
+.vitruviy .wind-settings-content>section>.wind-setting-check{flex-direction:row;align-items:center}
+.vitruviy .wind-settings-footer{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-top:1px solid var(--vit-line)}
+.vitruviy .wind-settings-footer .hint{font-size:11px;color:var(--vit-muted)}
+.vitruviy .wind-settings-footer button{min-height:34px}
+
+.vitruviy .wind-card-list{display:flex;flex-wrap:wrap;align-items:flex-start;gap:10px;min-height:64px;padding:0;background:none}
+.vitruviy .wind-card-list>.vit-card{zoom:var(--vit-card-scale,1);width:180px;max-width:180px;height:240px;max-height:240px;aspect-ratio:auto;flex:0 0 180px}
+.vitruviy .wind-card-list>.wind-grid-icon{zoom:var(--vit-card-scale,1);width:48px;height:48px;flex:0 0 48px}
+.vitruviy .vit-panel[data-card-scale]>.wind-panel-body>.wind-list-viewport{height:auto;min-height:84px}
+.vitruviy .wind-card-list .wind-grid-empty,.vitruviy .wind-legacy-cards .wind-grid-empty{position:static;margin:12px}
+
+.vitruviy .wind-grid-card footer{flex-wrap:nowrap;align-items:center}.vitruviy .wind-grid-card footer>button{margin:0}
+
+.vitruviy .wind-prepare-symbol{display:inline-block;box-sizing:border-box;width:12px;height:12px;border:2px solid currentColor;border-radius:50%;background:transparent;flex:0 0 12px}
+.vitruviy [data-action="togglePrepared"][aria-pressed="true"]{color:#72e59c;border-color:#4fbb76;background:#173025}
+.vitruviy [data-action="togglePrepared"][aria-pressed="true"] .wind-prepare-symbol{background:currentColor}
+.vitruviy [data-action="togglePrepared"][aria-pressed="false"] .wind-prepare-symbol{background:transparent}
+.vitruviy .wind-grid .wind-grid-card footer button:not(.vit-use-item){width:clamp(12px,calc(17px * var(--vit-card-scale,1)),17px);min-width:clamp(12px,calc(17px * var(--vit-card-scale,1)),17px);flex-basis:clamp(12px,calc(17px * var(--vit-card-scale,1)),17px);font-size:clamp(8px,calc(10px * var(--vit-card-scale,1)),10px)}
+.vitruviy .wind-grid .wind-prepare-symbol{width:clamp(8px,calc(12px * var(--vit-card-scale,1)),12px);height:clamp(8px,calc(12px * var(--vit-card-scale,1)),12px);flex-basis:clamp(8px,calc(12px * var(--vit-card-scale,1)),12px)}
+
+/* 0.2.1: readable response blocks beneath Apply Value. */
+.vit-chat .vit-chat-targets{display:flex;flex-direction:column;gap:5px;margin-top:6px;padding-top:6px;border-top:1px solid var(--vit-border,#633);}
+.vit-chat .vit-chat-targets h4{margin:0 0 2px;}
+.vit-chat .vit-chat-target{display:flex;flex-direction:column;align-items:stretch;gap:4px;padding:6px;border:1px solid #773333;border-radius:4px;}
+.vit-chat .vit-chat-target .vit-response-name{display:block;overflow-wrap:anywhere;line-height:1.35;}
+.vit-chat .vit-chat-target p{display:block;margin:0;line-height:1.4;}
+.vit-chat .vit-chat-target button{margin:3px 0 0;min-height:26px;width:100%;}
+.vit-inspiration-event{margin:8px 0;padding:6px 8px;border-left:2px solid #b09356;line-height:1.4;}
+.wind-settings-content textarea{width:100%;min-height:55px;resize:vertical;}
+.vit-area-settings{margin-bottom:12px;padding:10px;}
+
+.vit-inspiration-edit{display:inline-flex;gap:5px;align-items:center}.vit-inspiration-edit input{width:65px;height:26px;min-width:45px;}
+
+.vit-chat .vit-chat-targets h4{font-size:12px;line-height:1.3;font-weight:600;}
+.vit-chat .vit-place-area{display:block;width:100%;margin:6px 0;}
+
+/* One activation dialog: independently aligned target choices and roll settings. */
+.vit-roll-form .vit-activation-targets{display:flex;flex-direction:column;gap:8px;margin:0 0 8px;padding:10px;border:1px solid var(--vit-border,#733);border-radius:4px;}
+.vit-roll-form .vit-activation-targets p{margin:0 0 4px;line-height:1.4;}
+.vit-roll-form .vit-activation-target{display:grid;grid-template-columns:20px minmax(0,1fr) auto;align-items:center;gap:10px;}
+.vit-roll-form .vit-activation-target input{width:18px;height:18px;margin:0;}
+.vit-roll-form .vit-activation-target span{overflow-wrap:anywhere;}
+.vit-roll-form .vit-activation-target small{font-size:11px;color:var(--vit-muted,#aaa);}
+
+.vit-chat.vit-hidden-roll header{display:flex;gap:7px;align-items:center}.vit-hidden-roll p{line-height:1.4;margin:9px 0}.vit-hidden-result{text-align:center;border:1px solid currentColor;border-radius:3px;padding:7px;background:rgba(128,128,128,.12);font-size:22px;font-weight:700;}
+
+.vit-roll-form .vit-value-multipliers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:0;padding:8px;border:1px solid var(--vit-line,#733);}
+.vit-roll-form .vit-value-multipliers label{position:relative;display:block;flex:1;cursor:pointer;}
+.vit-value-multipliers input{position:absolute;opacity:0;width:1px!important;height:1px;}
+.vit-value-multipliers span{display:block;text-align:center;padding:7px;border:1px solid var(--vit-line,#733);border-radius:3px;}
+.vit-value-multipliers input:checked+span{background:var(--vit-title-bg,#321818);border-color:var(--vit-gold,#d93);color:var(--vit-gold,#d93);font-weight:700;}
+.vit-value-multipliers input:focus-visible+span{outline:2px solid currentColor;outline-offset:2px;}
+.vit-value-preview{display:flex;justify-content:space-between;align-items:center;margin:0!important;}.vit-value-preview output{font-size:20px;font-weight:700;}
+
+.vit-roll-form .vit-value-target-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;}
+.vit-value-target-tabs button[aria-selected="true"]{background:var(--vit-title-bg,#321818);border-color:var(--vit-gold,#d93);color:var(--vit-gold,#d93);}
+.vit-value-target-panel[hidden]{display:none!important;}
+.vit-value-target-row{padding:8px 0;border-bottom:1px solid var(--vit-line,#733);}
+.vit-value-target-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:6px;}
+.vit-roll-form .vit-value-target-heading>label{display:flex;flex:1;align-items:center;justify-content:flex-start;text-align:left;gap:8px;margin:0;}
+.vit-roll-form .vit-value-target-heading input{flex:0 0 auto;width:auto;}
+.vit-value-outcome{max-width:45%;text-align:right;font-size:11px;}
+.vit-value-dialog form{max-height:calc(100vh - 120px);overflow:auto;}
+.vit-value-dialog .dialog-buttons,.vit-value-dialog footer.form-footer{position:sticky;bottom:0;background:var(--vit-bg,#101214);padding:10px 0;z-index:2;}
+.vit-value-target-panel{max-height:40vh;overflow:auto;padding-right:5px;}
+.vit-value-dialog .vit-hint,.vit-response-pools,.vit-value-health{color:#c5c5c5;font-size:12px;line-height:1.5;}
+.vit-value-health{margin:2px 0 8px;}.vit-response-pools{display:block;font-weight:700;}
+.vit-action-mode{display:flex;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid var(--vit-line,#733);}
+.vit-action-mode>div{flex:1;min-width:0;}.vit-action-mode p{margin:3px 0;}.vit-action-mode small{display:block;color:#bbb;}.vit-action-mode button{flex:0 0 32px;width:32px;}
+.vit-mode-editor form{max-height:calc(100vh - 120px);overflow:auto;}.vit-mode-editor summary{cursor:pointer;font-weight:700;margin:8px 0;}.vit-mode-editor .form-footer{position:sticky;bottom:0;background:#101214;padding-top:8px;}
+.vit-item-group{border:1px solid var(--vit-line,#733);border-radius:4px;margin:8px 0;}
+.vit-item-group>summary{cursor:pointer;font-weight:700;padding:9px 10px;list-style-position:inside;list-style-type:disclosure-closed;}
+.vit-item-group>summary span{margin-right:8px;}.vit-item-group>summary small{font-weight:400;color:#bbb;}
+.vit-item-group[open]>summary{border-bottom:1px solid var(--vit-line,#733);}
+.vit-item-group-content{padding:8px 10px;}.vit-item-group-content>label{margin-top:7px;}
+
+.vit-item-group[open]>summary{list-style-type:disclosure-open;}
+.vit-item-tab-panel[data-item-panel="activation"]{gap:8px;}
+.vit-item-tab-panel>.vit-item-group{margin:0;}
+/* WIND 0.3: dark turquoise. */
+body[data-vit-theme="jujutsu"] .vitruviy{--vit-bg:#03191e;--vit-panel:#08272d;--vit-text:#e1f1f1;--vit-muted:#99b8bc;--vit-gold:#38a4ad;--vit-accent:#17828d;--vit-line:#185963;--vit-card-bg:#041d23;--vit-title-bg:#0b343b;--vit-field-bg:#041d23;--vit-control-bg:#0c363e;--vit-radius:4px}
+body[data-vit-theme="jujutsu"] .vit-panel{border-color:#185963;border-left:3px solid #13727e}
+body[data-vit-theme="jujutsu"] :is(.vit-panel h2,.vit-name){color:#38a4ad}
+body[data-vit-theme="jujutsu"] .vit-health-track span{background:#13727e}
+body[data-vit-theme="jujutsu"] .vit-chat{background:#08272d;border-color:#185963;color:#e1f1f1}
+body[data-vit-theme="jujutsu"] .vit-chat :is(header,footer strong){color:#38a4ad}
+body[data-vit-theme="jujutsu"] .vit-chat .vit-attempt.chosen{border-color:#17828d;color:#e1f1f1}
+body[data-vit-theme="jujutsu"] .vit-chat .vit-die{background:#0c363e}
+body[data-vit-theme="jujutsu"] .vit-chat footer{border-color:#185963}
+body[data-vit-theme="jujutsu"] .chat-message:has(.vit-chat){background:#03191e!important;color:#e1f1f1!important;border-color:#185963!important}
+body[data-vit-theme="jujutsu"] #sidebar-tabs :is(.ui-control.active,[aria-selected="true"],[aria-pressed="true"]){color:#38a4ad;border-color:#13727e;background:#0b343b}
+body[data-vit-theme="jujutsu"] #tooltip.vit-item-tooltip{background:#03191e;color:#e1f1f1;border-color:#17828d}
+.vit-action-controls{display:flex;flex-direction:column;gap:4px;margin-top:5px}
+.vit-action-controls button{width:100%;margin:0}
+
+/* Compact chat typography. Current results use one numeric scale across every theme. */
+.vit-chat{--vit-chat-accent:#d5bd7c;font-family:var(--vit-font,Arial,sans-serif);font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+body[data-vit-theme="starwars"] .vit-chat{--vit-chat-accent:#f7ce4f}
+body[data-vit-theme="cyberpunk"] .vit-chat{--vit-chat-accent:#ef3838}
+body[data-vit-theme="jujutsu"] .vit-chat{--vit-chat-accent:#38a4ad}
+.vit-chat .vit-public-description{margin:4px 0;white-space:normal}
+.vit-chat .vit-public-description :is(h1,h2,h3,h4){font-family:var(--vit-heading,Arial,sans-serif);font-size:13px;line-height:1.3;margin:6px 0 3px}
+.vit-chat .vit-public-description :is(ul,ol){margin:4px 0;padding-left:18px}
+.vit-chat .vit-public-description li{margin:2px 0}
+.vit-chat .vit-public-description p:first-child{margin-top:0}
+.vit-chat .vit-public-description p:last-child{margin-bottom:0}
+.vit-chat .vit-attempt>div{display:flex;flex-wrap:wrap;align-items:center;gap:3px}
+.vit-chat .vit-die{display:inline-flex;align-items:center;justify-content:center;min-height:22px;line-height:1;font-weight:600;font-family:var(--vit-font,Arial,sans-serif)}
+.vit-chat .vit-result-summary{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:baseline;gap:5px 8px;font-size:12px;line-height:1.4}
+.vit-chat .vit-result-stat{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px}
+.vit-chat .vit-result-number,.vit-chat footer strong{font-family:var(--vit-font,Arial,sans-serif);font-size:12px;line-height:inherit;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:0}
+.vit-chat .vit-item-damage{margin-left:0;min-width:0;text-align:right}
+.vit-chat .vit-item-damage small{font-family:var(--vit-font,Arial,sans-serif);font-size:12px;line-height:1.4;opacity:.8;margin-top:2px}
+.vit-chat .vit-critical{display:inline;font:600 12px/1.4 var(--vit-font,Arial,sans-serif);letter-spacing:0;text-transform:none;color:var(--vit-chat-accent);border:0;border-radius:0;padding:0;margin:0;vertical-align:baseline}
+.vit-chat button{font-family:var(--vit-font,Arial,sans-serif);font-size:12px;font-weight:600;line-height:1.25;min-height:26px;height:auto;padding:4px 6px;margin:4px 0 0;white-space:normal}
+.vit-chat .vit-inspiration-event{margin:5px 0;padding:3px 6px;font-size:12px;line-height:1.4}
+.vit-chat :is(.vit-charge-receipt,.vit-area-receipt,.vit-applied-effect,.vit-card-quantity,.vit-hint){font-size:12px;line-height:1.4;margin:4px 0}
+.vit-chat .vit-chat-target p{font-size:12px;line-height:1.4}
+.vit-chat .vit-hidden-result{font-family:var(--vit-font,Arial,sans-serif);font-size:18px;padding:5px}
+
+.vit-chat .vit-action-controls button{margin:0}
+
+.vit-chat footer{font-family:var(--vit-font,Arial,sans-serif);font-size:12px;line-height:1.4;align-items:baseline}
+
+/* Result labels and their values share the same emphasized type size (+4pt). */
+.vit-chat footer>span{font-size:calc(12px + 4pt);line-height:1.35;font-weight:700}
+.vit-chat footer .vit-result-number,.vit-chat footer strong{font-size:inherit;font-weight:inherit}
+.vit-chat footer .vit-critical{display:block;flex-basis:100%;font-size:12px;line-height:1.4;font-weight:400;margin:2px 0 0}
+.vit-chat .vit-item-damage small{font-weight:400}
+
+.vit-chat footer>span:first-child{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:4px;row-gap:0}
+
+/* Item sheets open as enriched read views, editing is explicit. */
+.vit-item-edit-bar{display:flex;justify-content:flex-end;padding:6px 12px 0}.vit-item-edit-bar button{width:auto;flex:0 0 auto}.vitruviy .vit-item-reading{gap:8px}.vitruviy .vit-item-reading header strong{flex:1;min-width:0;font-size:18px;overflow-wrap:anywhere}.vitruviy .vit-item-reading .vit-rich-view{padding:4px 0;min-height:0}.vit-item-reading .vit-item-actions{margin-top:10px}
+
+.vitruviy .vit-item-reading .vit-item-price{flex:0 0 auto;font-size:12px;color:var(--vit-muted);white-space:nowrap}
+
+/* Independent description typography; card geometry and header metadata keep their own sizes. */
+.vitruviy [data-card-scale] .vit-card>.vit-description{font-size:calc(12px * var(--vit-card-text-scale,1));line-height:1.45}.vitruviy [data-card-scale] .vit-card>.vit-description :not(img):not(svg):not(video){font-size:inherit!important;line-height:inherit}.vitruviy .vit-card-text-scale input[type="range"]{width:70px;min-width:48px}

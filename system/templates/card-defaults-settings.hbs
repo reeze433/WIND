@@ -1,0 +1,9 @@
+<div class="wind-card-defaults">
+<h3>{{localize 'VIT.NewCardDefaults'}}</h3>
+<div class="form-group"><label for="wind-card-default-size">{{localize 'VIT.CardGridSize'}}</label><select id="wind-card-default-size" name="gridWidth">{{#each widths}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></div>
+<p class="hint">{{localize 'VIT.CardDefaultsHint'}}</p>
+<h3>{{localize 'VIT.GridLimits'}}</h3>
+{{#each panels}}<div class="form-group"><label for="wind-grid-limit-{{type}}">{{label}}</label><select id="wind-grid-limit-{{type}}" name="{{type}}">{{#each sizes}}<option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>{{/each}}</select></div>{{/each}}
+<p class="hint">{{localize 'VIT.GridLimitsHint'}}</p>
+<button type="submit"><i class="fa-solid fa-save" aria-hidden="true"></i> {{localize 'VIT.Save'}}</button>
+</div>
